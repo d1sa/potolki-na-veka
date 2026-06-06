@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260606-3">
+    <link rel="stylesheet" href="styles.css?v=20260606-4">
   </head>
   <body>
     <header class="site-header" data-header>
@@ -25,39 +25,58 @@
               <span aria-hidden="true">▾</span>
             </button>
             <div class="services-dropdown" id="services-dropdown">
-              <div class="dropdown-intro">
-                <h2>Услуги по натяжным потолкам</h2>
-                <p>Выберите направление: потолки по помещениям, виды полотен, популярные решения, освещение, карнизы или профили.</p>
-              </div>
-              <div class="dropdown-grid">
-                <a class="dropdown-card" href="/uslugi/pomeshcheniya/">
-                  <span>Потолки по помещениям</span>
-                  <small>Зал, спальня, детская, кухня, ванная, прихожая, балкон и лоджия.</small>
-                </a>
-                <a class="dropdown-card" href="/uslugi/vidy-potolkov/">
-                  <span>Виды потолков</span>
-                  <small>Матовые, глянцевые, сатиновые, тканевые, ПВХ, цветные потолки и фотопечать.</small>
-                </a>
-                <a class="dropdown-card" href="/uslugi/resheniya/">
-                  <span>Популярные решения</span>
-                  <small>Базовый потолок, потолок со светом, с люстрой, теневой, парящий и двухуровневый потолок.</small>
-                </a>
-                <a class="dropdown-card" href="/uslugi/osveshchenie/">
-                  <span>Освещение</span>
-                  <small>Светильники GX53, люстры, LED-лента, трековое и линейное освещение.</small>
-                </a>
-                <a class="dropdown-card" href="/uslugi/karnizy/">
-                  <span>Карнизы и ниши</span>
-                  <small>Закладная под карниз, скрытая ниша под шторы и ниша с подсветкой.</small>
-                </a>
-                <a class="dropdown-card" href="/uslugi/profili/">
-                  <span>Профили</span>
-                  <small>Пластиковый, алюминиевый, теневой, парящий профиль и профиль для тканевых полотен.</small>
-                </a>
-                <a class="dropdown-card all-services" href="/uslugi/">
-                  <span>Все услуги</span>
-                  <small>Общий каталог всех направлений.</small>
-                </a>
+              <div class="dropdown-layout">
+                <div class="dropdown-intro">
+                  <span class="dropdown-kicker">Каталог услуг</span>
+                  <h2>Услуги: от полотна до света, ниш и профилей</h2>
+                  <a class="button button-arrow all-services" href="/uslugi/">
+                    <span>Все услуги</span>
+                  </a>
+                </div>
+                <div class="dropdown-grid">
+                  <a class="dropdown-card" href="/uslugi/pomeshcheniya/">
+                    <span class="dropdown-thumb"><img src="assets/images/services-rooms.jpg" alt=""></span>
+                    <span class="dropdown-card-copy">
+                      <span>По помещениям</span>
+                      <small>Зал, спальня, детская, кухня, ванная, прихожая и балкон.</small>
+                    </span>
+                  </a>
+                  <a class="dropdown-card" href="/uslugi/vidy-potolkov/">
+                    <span class="dropdown-thumb"><img src="assets/images/services-types.jpg" alt=""></span>
+                    <span class="dropdown-card-copy">
+                      <span>Виды потолков</span>
+                      <small>Матовые, глянцевые, сатиновые, тканевые, ПВХ и фотопечать.</small>
+                    </span>
+                  </a>
+                  <a class="dropdown-card" href="/uslugi/resheniya/">
+                    <span class="dropdown-thumb"><img src="assets/images/services-solutions.jpg" alt=""></span>
+                    <span class="dropdown-card-copy">
+                      <span>Популярные решения</span>
+                      <small>Базовый, со светом, с люстрой, теневой, парящий и двухуровневый.</small>
+                    </span>
+                  </a>
+                  <a class="dropdown-card" href="/uslugi/osveshchenie/">
+                    <span class="dropdown-thumb"><img src="assets/images/services-lighting.jpg" alt=""></span>
+                    <span class="dropdown-card-copy">
+                      <span>Освещение</span>
+                      <small>GX53, люстры, LED-лента, трековое и линейное освещение.</small>
+                    </span>
+                  </a>
+                  <a class="dropdown-card" href="/uslugi/karnizy/">
+                    <span class="dropdown-thumb"><img src="assets/images/services-cornices.jpg" alt=""></span>
+                    <span class="dropdown-card-copy">
+                      <span>Карнизы и ниши</span>
+                      <small>Закладные, скрытые ниши под шторы и ниши с подсветкой.</small>
+                    </span>
+                  </a>
+                  <a class="dropdown-card" href="/uslugi/profili/">
+                    <span class="dropdown-thumb"><img src="assets/images/services-profiles.jpg" alt=""></span>
+                    <span class="dropdown-card-copy">
+                      <span>Профили</span>
+                      <small>Пластиковый, алюминиевый, теневой, парящий и для ткани.</small>
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -100,13 +119,31 @@
               <span aria-hidden="true">▾</span>
             </button>
             <div class="mobile-services-list" id="mobile-services-list">
-              <a href="/uslugi/pomeshcheniya/">Потолки по помещениям</a>
-              <a href="/uslugi/vidy-potolkov/">Виды потолков</a>
-              <a href="/uslugi/resheniya/">Популярные решения</a>
-              <a href="/uslugi/osveshchenie/">Освещение</a>
-              <a href="/uslugi/karnizy/">Карнизы и ниши</a>
-              <a href="/uslugi/profili/">Профили</a>
-              <a href="/uslugi/">Все услуги</a>
+              <a class="mobile-service-card" href="/uslugi/pomeshcheniya/">
+                <span class="mobile-service-thumb"><img src="assets/images/services-rooms.jpg" alt=""></span>
+                <span>По помещениям</span>
+              </a>
+              <a class="mobile-service-card" href="/uslugi/vidy-potolkov/">
+                <span class="mobile-service-thumb"><img src="assets/images/services-types.jpg" alt=""></span>
+                <span>Виды потолков</span>
+              </a>
+              <a class="mobile-service-card" href="/uslugi/resheniya/">
+                <span class="mobile-service-thumb"><img src="assets/images/services-solutions.jpg" alt=""></span>
+                <span>Популярные решения</span>
+              </a>
+              <a class="mobile-service-card" href="/uslugi/osveshchenie/">
+                <span class="mobile-service-thumb"><img src="assets/images/services-lighting.jpg" alt=""></span>
+                <span>Освещение</span>
+              </a>
+              <a class="mobile-service-card" href="/uslugi/karnizy/">
+                <span class="mobile-service-thumb"><img src="assets/images/services-cornices.jpg" alt=""></span>
+                <span>Карнизы и ниши</span>
+              </a>
+              <a class="mobile-service-card" href="/uslugi/profili/">
+                <span class="mobile-service-thumb"><img src="assets/images/services-profiles.jpg" alt=""></span>
+                <span>Профили</span>
+              </a>
+              <a class="button button-arrow mobile-all-services" href="/uslugi/">Все услуги</a>
             </div>
           </div>
           <a href="/ceny/">Цены</a>

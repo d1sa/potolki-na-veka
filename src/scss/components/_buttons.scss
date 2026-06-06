@@ -48,3 +48,24 @@
   padding: 9px 14px;
   justify-self: start;
 }
+
+.button-arrow {
+  position: relative;
+  padding-right: 42px;
+}
+
+.button-arrow::after {
+  content: ">";
+  position: absolute;
+  right: 18px;
+  font-weight: 800;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.button-arrow:hover::after,
+.button-arrow:focus-visible::after {
+  opacity: 1;
+  transform: translateX(0);
+}
