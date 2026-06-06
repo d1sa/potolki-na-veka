@@ -1,11 +1,13 @@
 import { initFaq } from "./components/faq.js";
 import { initHeader } from "./components/header.js";
+import { initHeroWorksPreview } from "./components/hero-works-preview.js";
 import { initMobileMenu } from "./components/mobile-menu.js";
 import { initReveal } from "./components/reveal.js";
 import { initServicesDropdown } from "./components/services-dropdown.js";
 
 const mobileMenu = initMobileMenu();
 const servicesDropdown = initServicesDropdown();
+const heroWorksPreview = initHeroWorksPreview();
 
 initHeader();
 initFaq();
@@ -16,4 +18,5 @@ document.addEventListener("keydown", (event) => {
 
   mobileMenu.close();
   servicesDropdown.close();
+  heroWorksPreview.close();
 });

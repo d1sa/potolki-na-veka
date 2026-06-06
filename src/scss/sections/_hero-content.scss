@@ -3,7 +3,6 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  padding-top: 40px;
   text-align: center;
 }
 
@@ -13,6 +12,176 @@
   gap: 12px;
   align-items: center;
   width: 100%;
+}
+
+.hero-works-preview {
+  position: relative;
+  display: block;
+  width: 211px;
+  height: 96px;
+  margin-bottom: 0;
+  border-radius: 28px;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hero-works-photos {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 211px;
+  height: 96px;
+  transform: translateX(-50%);
+  transition: width 0.34s ease, height 0.34s ease;
+  will-change: width, height;
+}
+
+.hero-work-photo {
+  position: absolute;
+  overflow: hidden;
+  border: 2px solid var(--white);
+  background: var(--card-soft);
+  box-shadow: 0 4px 12px rgba(var(--text-rgb), 0.16);
+  transition: width 0.34s ease, height 0.34s ease, border-radius 0.34s ease, box-shadow 0.34s ease, transform 0.34s ease, left 0.34s ease, top 0.34s ease;
+  will-change: transform, width, height, left, top;
+}
+
+.hero-work-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-work-photo-led {
+  left: 23px;
+  top: 13px;
+  z-index: 1;
+  width: 70px;
+  height: 68px;
+  border-radius: 14px;
+  transform: rotate(-15deg);
+}
+
+.hero-work-photo-gx53 {
+  left: 69px;
+  top: 2px;
+  z-index: 3;
+  width: 76px;
+  height: 76px;
+  border-radius: 14px;
+  transform: rotate(5deg);
+}
+
+.hero-work-photo-chandelier {
+  left: 128px;
+  top: 14px;
+  z-index: 2;
+  width: 68px;
+  height: 68px;
+  border-radius: 14px;
+  transform: rotate(-15deg);
+}
+
+.hero-works-link {
+  position: absolute;
+  left: 50%;
+  top: 66px;
+  z-index: 5;
+  display: inline-flex;
+  min-height: 56px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--accent);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.94);
+  transition: opacity 0.22s ease, transform 0.22s ease, background 0.18s ease;
+  backdrop-filter: blur(24px);
+  box-shadow: 0 14px 34px rgba(var(--text-rgb), 0.12);
+}
+
+.hero-works-link:hover,
+.hero-works-link:focus-visible {
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.hero-works-link-icon {
+  position: relative;
+  display: inline-grid;
+  width: 44px;
+  height: 32px;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--white);
+}
+
+.hero-works-link-icon::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid var(--accent);
+  border-right: 2px solid var(--accent);
+  transform: translateX(-1px) rotate(45deg);
+}
+
+.hero-works-preview:hover,
+.hero-works-preview:focus-within,
+.hero-works-preview.is-open {
+  z-index: 4;
+}
+
+.hero-works-preview:hover .hero-works-photos,
+.hero-works-preview:focus-within .hero-works-photos,
+.hero-works-preview.is-open .hero-works-photos {
+  width: 460px;
+  height: 132px;
+}
+
+.hero-works-preview:hover .hero-work-photo,
+.hero-works-preview:focus-within .hero-work-photo,
+.hero-works-preview.is-open .hero-work-photo {
+  top: 0;
+  width: 132px;
+  height: 132px;
+  border-radius: 28px;
+  box-shadow: 0 12px 24px rgba(var(--text-rgb), 0.14);
+  transform: rotate(0);
+}
+
+.hero-works-preview:hover .hero-work-photo-led,
+.hero-works-preview:focus-within .hero-work-photo-led,
+.hero-works-preview.is-open .hero-work-photo-led {
+  left: 22px;
+}
+
+.hero-works-preview:hover .hero-work-photo-gx53,
+.hero-works-preview:focus-within .hero-work-photo-gx53,
+.hero-works-preview.is-open .hero-work-photo-gx53 {
+  left: 164px;
+}
+
+.hero-works-preview:hover .hero-work-photo-chandelier,
+.hero-works-preview:focus-within .hero-work-photo-chandelier,
+.hero-works-preview.is-open .hero-work-photo-chandelier {
+  left: 306px;
+}
+
+.hero-works-preview:hover .hero-works-link,
+.hero-works-preview:focus-within .hero-works-link,
+.hero-works-preview.is-open .hero-works-link {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .hero-location {

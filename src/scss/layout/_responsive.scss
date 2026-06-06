@@ -113,6 +113,92 @@
     gap: 10px;
   }
 
+  .hero-works-preview {
+    width: 164px;
+    height: 76px;
+  }
+
+  .hero-works-photos {
+    width: min(calc(100vw - 24px), 342px);
+    height: 102px;
+  }
+
+  .hero-work-photo-led {
+    left: calc(50% - 65px);
+    top: 10px;
+    width: 54px;
+    height: 53px;
+    border-radius: 12px;
+  }
+
+  .hero-work-photo-gx53 {
+    left: calc(50% - 29px);
+    top: 1px;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+  }
+
+  .hero-work-photo-chandelier {
+    left: calc(50% + 17px);
+    top: 11px;
+    width: 53px;
+    height: 53px;
+    border-radius: 12px;
+  }
+
+  .hero-works-preview:hover,
+  .hero-works-preview:focus-within,
+  .hero-works-preview.is-open {
+    z-index: 4;
+  }
+
+  .hero-works-preview:hover .hero-works-photos,
+  .hero-works-preview:focus-within .hero-works-photos,
+  .hero-works-preview.is-open .hero-works-photos {
+    width: min(calc(100vw - 24px), 342px);
+    height: 102px;
+  }
+
+  .hero-works-link {
+    top: 51px;
+    min-height: 48px;
+    gap: 10px;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .hero-works-preview:hover .hero-work-photo,
+  .hero-works-preview:focus-within .hero-work-photo,
+  .hero-works-preview.is-open .hero-work-photo {
+    width: 102px;
+    height: 102px;
+    border-radius: 22px;
+  }
+
+  .hero-works-preview:hover .hero-work-photo-led,
+  .hero-works-preview:focus-within .hero-work-photo-led,
+  .hero-works-preview.is-open .hero-work-photo-led {
+    left: 0;
+  }
+
+  .hero-works-preview:hover .hero-work-photo-gx53,
+  .hero-works-preview:focus-within .hero-work-photo-gx53,
+  .hero-works-preview.is-open .hero-work-photo-gx53 {
+    left: calc(50% - 51px);
+  }
+
+  .hero-works-preview:hover .hero-work-photo-chandelier,
+  .hero-works-preview:focus-within .hero-work-photo-chandelier,
+  .hero-works-preview.is-open .hero-work-photo-chandelier {
+    left: calc(100% - 102px);
+  }
+
+  .hero-works-link-icon {
+    width: 36px;
+    height: 28px;
+  }
+
   .hero-location {
     font-size: 13px;
     line-height: 20px;
