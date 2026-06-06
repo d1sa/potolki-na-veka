@@ -6,6 +6,7 @@
   "scripts": {
     "build": "npm run build:styles",
     "build:styles": "sass src/scss/main.scss styles.css --no-source-map",
+    "dev": "node dev-server.js",
     "watch:styles": "sass src/scss/main.scss styles.css --watch --no-source-map"
   },
   "devDependencies": {
