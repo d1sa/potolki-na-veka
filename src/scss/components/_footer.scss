@@ -1,0 +1,47 @@
+.site-footer {
+  padding: 54px 0 42px;
+  background: #252520;
+  color: #fff;
+}
+
+.mobile-sticky-actions {
+  display: none;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr repeat(4, 1fr);
+  gap: 28px;
+}
+
+.site-footer .brand-name,
+.site-footer a {
+  color: #fff;
+}
+
+.site-footer .brand-subtitle,
+.site-footer p {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.footer-brand p {
+  max-width: 310px;
+  margin-top: 18px;
+}
+
+.footer-col {
+  display: grid;
+  align-content: start;
+  gap: 9px;
+}
+
+.footer-col h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-col a,
+.footer-col p {
+  font-size: 14px;
+}

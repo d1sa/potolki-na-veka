@@ -1,0 +1,14 @@
+{
+  "name": "potolki-na-veka",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:styles",
+    "build:styles": "sass src/scss/main.scss styles.css --no-source-map",
+    "watch:styles": "sass src/scss/main.scss styles.css --watch --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}

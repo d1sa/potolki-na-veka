@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="process measure interior asset">
+  <defs>
+    <linearGradient id="wall9" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eff3eb"/><stop offset="1" stop-color="#c2ceb6"/></linearGradient>
+    <linearGradient id="floor9" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbfaf6"/><stop offset="1" stop-color="#c2ceb6"/></linearGradient>
+    <linearGradient id="ceil9" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#eff3eb"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+    <pattern id="fabric3653093376" width="38" height="38" patternUnits="userSpaceOnUse"><rect width="38" height="38" fill="#eff3eb"/><path d="M0 10 H38 M10 0 V38" stroke="#7b8b65" stroke-width="2" opacity="0.23"/></pattern>
+    <filter id="glow9" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft9" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#1f242b" flood-opacity="0.18"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#wall9)"/>
+  <g>
+    <rect x="58" y="52" width="1084" height="250" rx="34" fill="url(#ceil9)" filter="url(#soft9)"/>
+    <path d="M78 300 H1122 L1010 386 H190 Z" fill="#ffffff" opacity="0.42"/>
+    <rect x="0" y="612" width="1200" height="188" fill="url(#floor9)"/>
+    <path d="M64 662 C260 632 374 648 552 682 S876 706 1136 654" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.46"/>
+    
+    <rect x="150" y="92" width="900" height="18" rx="9" fill="#f7d879" opacity="0.68" filter="url(#glow9)"/>
+<circle cx="310" cy="154" r="17" fill="#fffdf7" opacity="0.94" filter="url(#glow9)"/>
+<circle cx="600" cy="154" r="17" fill="#fffdf7" opacity="0.94" filter="url(#glow9)"/>
+<circle cx="890" cy="154" r="17" fill="#fffdf7" opacity="0.94" filter="url(#glow9)"/>
+    <ellipse cx="604" cy="688" rx="438" ry="62" fill="#1e242b" opacity="0.12"/>
+    <g filter="url(#soft9)"><rect x="208" y="440" width="520" height="132" rx="26" fill="#ffffff" opacity="0.9"/><path d="M272 398 L804 556" stroke="#f7d879" stroke-width="15" stroke-linecap="round" opacity="0.72"/><circle cx="272" cy="398" r="24" fill="#272d22" opacity="0.72"/><circle cx="804" cy="556" r="24" fill="#272d22" opacity="0.72"/></g>
+    <rect x="110" y="78" width="980" height="190" rx="32" fill="#ffffff" opacity="0.18"/>
+    
+    
+    
+    <path d="M108 246 H1092" stroke="#272d22" stroke-width="3" opacity="0.08"/>
+  </g>
+</svg>

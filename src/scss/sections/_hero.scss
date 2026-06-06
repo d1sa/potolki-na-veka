@@ -1,0 +1,33 @@
+.hero {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
+  padding-top: 42px;
+  background:
+    linear-gradient(120deg, rgba(239, 233, 223, 0.72), rgba(248, 246, 241, 0.2) 54%),
+    var(--bg);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.92fr);
+  align-items: center;
+  gap: 48px;
+}
+
+.breadcrumbs {
+  margin-bottom: 18px;
+}
+
+.breadcrumbs a {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.eyebrow,
+.section-kicker {
+  margin: 0;
+  color: var(--accent-dark);
+  font-weight: 800;
+}
+

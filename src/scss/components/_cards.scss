@@ -1,0 +1,65 @@
+.image-card,
+.text-card,
+.process-card,
+.texture-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  overflow: hidden;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.image-card:hover,
+.text-card:hover,
+.process-card:hover,
+.texture-card:hover,
+.gallery-card:hover,
+.mini-card-grid a:hover {
+  transform: translateY(-4px);
+  border-color: rgba(111, 115, 86, 0.45);
+  box-shadow: 0 18px 42px rgba(31, 31, 29, 0.08);
+}
+
+.image-card img,
+.process-card img,
+.texture-card img,
+.mini-card-grid img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: var(--bg-strong);
+  transition: transform 0.28s ease;
+}
+
+.image-card:hover img,
+.process-card:hover img,
+.texture-card:hover img,
+.gallery-card:hover img {
+  transform: scale(1.035);
+}
+
+.image-card h3,
+.image-card p,
+.process-card h3,
+.process-card p,
+.texture-card h3,
+.texture-card p {
+  padding-inline: 20px;
+}
+
+.image-card h3,
+.process-card h3,
+.texture-card h3 {
+  padding-top: 20px;
+}
+
+.image-card p,
+.process-card p,
+.texture-card p,
+.text-card p {
+  color: var(--muted);
+  margin-bottom: 22px;
+}

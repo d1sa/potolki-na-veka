@@ -1,0 +1,13 @@
+.services-grid .image-card {
+  background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.74));
+}
+
+.services-grid .image-card:nth-child(odd) {
+  border-color: rgba(111, 115, 86, 0.22);
+}
+
+.solutions-grid .image-card:first-child,
+.solutions-grid .image-card:nth-child(2) {
+  background: linear-gradient(180deg, rgba(111, 115, 86, 0.08), #fff 56%);
+  border-color: rgba(111, 115, 86, 0.25);
+}

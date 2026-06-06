@@ -1,0 +1,23 @@
+.types-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.types-grid .texture-card img {
+  aspect-ratio: 16 / 7.5;
+}
+
+.types-grid .texture-card h3 {
+  font-size: 18px;
+}
+
+.types-grid .texture-card p {
+  font-size: 14px;
+}
+
+.text-card {
+  padding: 22px;
+}
+
+.compact .text-card {
+  background: rgba(255, 255, 255, 0.72);
+}

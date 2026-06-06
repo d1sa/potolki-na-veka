@@ -1,0 +1,127 @@
+.price-section {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(239, 233, 223, 0.55));
+}
+
+.price-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.72fr) minmax(560px, 1fr);
+  gap: 54px;
+  align-items: start;
+}
+
+.price-copy {
+  position: sticky;
+  top: calc(var(--header-height) + 24px);
+  margin-bottom: 0;
+}
+
+.price-copy h2 {
+  max-width: 620px;
+}
+
+.price-note {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 14px;
+  align-items: start;
+  margin: 34px 0;
+  padding: 18px;
+  border-radius: var(--radius);
+  background: rgba(111, 115, 86, 0.1);
+  border: 1px solid rgba(111, 115, 86, 0.14);
+}
+
+.price-note span {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(78, 82, 61, 0.35);
+  border-radius: 50%;
+  color: var(--accent-dark);
+  font-weight: 800;
+}
+
+.price-note p {
+  margin: 0;
+  color: var(--accent-dark);
+  font-weight: 750;
+}
+
+.price-actions {
+  display: grid;
+  gap: 12px;
+}
+
+.price-actions .button {
+  min-height: 56px;
+  width: 100%;
+}
+
+.price-list-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow);
+}
+
+.price-group h3 {
+  margin: 0;
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(248, 246, 241, 0.84);
+  color: var(--accent-dark);
+  font-size: 15px;
+}
+
+.price-group h3::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 1px;
+}
+
+.price-group:nth-child(2) h3 {
+  color: #6d5ca8;
+}
+
+.price-group:nth-child(3) h3 {
+  color: #a9691f;
+}
+
+.price-group:nth-child(4) h3 {
+  color: #62676f;
+}
+
+.price-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  min-height: 72px;
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.price-group:last-child .price-row:last-child {
+  border-bottom: 0;
+}
+
+.price-row span {
+  color: var(--graphite);
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.price-row strong {
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 850;
+  white-space: nowrap;
+  text-align: right;
+}

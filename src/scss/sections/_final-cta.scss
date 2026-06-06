@@ -1,0 +1,28 @@
+.final-cta {
+  padding-top: 60px;
+}
+
+.final-cta-inner {
+  padding: 44px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(78, 82, 61, 0.2);
+  background:
+    linear-gradient(135deg, rgba(111, 115, 86, 0.12), rgba(255, 255, 255, 0.78)),
+    #fff;
+  color: var(--text);
+}
+
+.final-cta-inner p {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.final-cta .button-secondary {
+  color: var(--accent-dark);
+  border-color: rgba(78, 82, 61, 0.35);
+}
+
+.final-cta .button-secondary:hover {
+  color: #fff;
+}

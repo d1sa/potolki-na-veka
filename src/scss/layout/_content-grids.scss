@@ -1,0 +1,19 @@
+.section-action {
+  margin-top: 30px;
+}
+
+.split-section,
+.material-grid,
+.form-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.96fr) minmax(360px, 0.72fr);
+  gap: 46px;
+  align-items: center;
+}
+
+.position-visual img,
+.material-visual img {
+  width: 100%;
+  min-height: 360px;
+  object-fit: cover;
+}

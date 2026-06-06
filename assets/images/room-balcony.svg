@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="room balcony interior asset">
+  <defs>
+    <linearGradient id="wall21" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eff3eb"/><stop offset="1" stop-color="#c2ceb6"/></linearGradient>
+    <linearGradient id="floor21" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbfaf6"/><stop offset="1" stop-color="#c2ceb6"/></linearGradient>
+    <linearGradient id="ceil21" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#eff3eb"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+    <pattern id="fabric933148114" width="38" height="38" patternUnits="userSpaceOnUse"><rect width="38" height="38" fill="#eff3eb"/><path d="M0 10 H38 M10 0 V38" stroke="#7b8b65" stroke-width="2" opacity="0.23"/></pattern>
+    <filter id="glow21" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft21" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#1f242b" flood-opacity="0.18"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#wall21)"/>
+  <g>
+    <rect x="58" y="52" width="1084" height="250" rx="34" fill="url(#ceil21)" filter="url(#soft21)"/>
+    <path d="M78 300 H1122 L1010 386 H190 Z" fill="#ffffff" opacity="0.42"/>
+    <rect x="0" y="612" width="1200" height="188" fill="url(#floor21)"/>
+    <path d="M64 662 C260 632 374 648 552 682 S876 706 1136 654" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.46"/>
+    
+    <rect x="150" y="92" width="900" height="18" rx="9" fill="#f7d879" opacity="0.68" filter="url(#glow21)"/>
+<circle cx="310" cy="154" r="17" fill="#fffdf7" opacity="0.94" filter="url(#glow21)"/>
+<circle cx="600" cy="154" r="17" fill="#fffdf7" opacity="0.94" filter="url(#glow21)"/>
+<circle cx="890" cy="154" r="17" fill="#fffdf7" opacity="0.94" filter="url(#glow21)"/>
+    <ellipse cx="604" cy="688" rx="438" ry="62" fill="#1e242b" opacity="0.12"/>
+    <g filter="url(#soft21)"><rect x="176" y="310" width="704" height="300" rx="24" fill="#f8fbfa" opacity="0.8"/><line x1="352" y1="310" x2="352" y2="610" stroke="#7b8b65" stroke-width="12" opacity="0.44"/><line x1="600" y1="310" x2="600" y2="610" stroke="#7b8b65" stroke-width="12" opacity="0.44"/><line x1="848" y1="310" x2="848" y2="610" stroke="#7b8b65" stroke-width="12" opacity="0.44"/><rect x="230" y="544" width="244" height="80" rx="24" fill="#c2ceb6"/></g>
+    <rect x="110" y="78" width="980" height="190" rx="32" fill="#ffffff" opacity="0.18"/>
+    
+    
+    
+    <path d="M108 246 H1092" stroke="#272d22" stroke-width="3" opacity="0.08"/>
+  </g>
+</svg>

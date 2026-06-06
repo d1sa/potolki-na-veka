@@ -1,0 +1,28 @@
+.rooms-grid .image-card:first-child {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: minmax(360px, 1fr) minmax(280px, 0.86fr);
+}
+
+.rooms-grid .image-card:not(:first-child) img {
+  aspect-ratio: 16 / 8;
+}
+
+.rooms-grid .image-card:not(:first-child) p {
+  font-size: 15px;
+}
+
+.rooms-grid .image-card:first-child img {
+  height: 100%;
+  aspect-ratio: auto;
+  grid-row: 1 / span 2;
+}
+
+.rooms-grid .image-card:first-child h3,
+.rooms-grid .image-card:first-child p {
+  grid-column: 2;
+}
+
+.rooms-grid .image-card:first-child h3 {
+  align-self: end;
+}

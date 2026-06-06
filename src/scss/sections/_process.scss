@@ -1,0 +1,44 @@
+.process-grid {
+  counter-reset: process;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.process-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  align-items: stretch;
+  grid-column: span 3;
+}
+
+.process-card::before {
+  counter-increment: process;
+  content: counter(process);
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(31, 31, 29, 0.84);
+  color: #fff;
+  font-weight: 800;
+}
+
+.process-card img {
+  height: 100%;
+  aspect-ratio: auto;
+  grid-row: 1 / span 2;
+}
+
+.process-card h3,
+.process-card p {
+  grid-column: 2;
+}
+
+.process-card h3 {
+  align-self: end;
+}

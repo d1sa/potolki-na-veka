@@ -1,0 +1,13 @@
+.container {
+  width: min(100% - 32px, 1280px);
+  margin-inline: auto;
+}
+
+.section {
+  padding: 96px 0;
+  scroll-margin-top: 96px;
+}
+
+.toned {
+  background: linear-gradient(180deg, rgba(239, 233, 223, 0.62), rgba(248, 246, 241, 0));
+}
