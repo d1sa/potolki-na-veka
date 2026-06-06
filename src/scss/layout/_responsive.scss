@@ -101,12 +101,11 @@
 
   .hero-layout {
     gap: 24px;
-    padding-top: 20px;
+    padding: 0;
   }
 
   .hero-copy {
     gap: 14px;
-    padding-top: 20px;
   }
 
   .hero-heading {
@@ -179,7 +178,7 @@
   .hero-works-preview:hover .hero-work-photo-led,
   .hero-works-preview:focus-within .hero-work-photo-led,
   .hero-works-preview.is-open .hero-work-photo-led {
-    left: 0;
+    left: 10px;
   }
 
   .hero-works-preview:hover .hero-work-photo-gx53,
@@ -191,10 +190,10 @@
   .hero-works-preview:hover .hero-work-photo-chandelier,
   .hero-works-preview:focus-within .hero-work-photo-chandelier,
   .hero-works-preview.is-open .hero-work-photo-chandelier {
-    left: calc(100% - 102px);
+    left: calc(100% - 112px);
   }
 
-  .hero-works-link-icon {
+  .button-oval-arrow__icon {
     width: 36px;
     height: 28px;
   }
@@ -205,7 +204,7 @@
   }
 
   .hero h1 {
-    font-size: 42px;
+    font-size: 32px;
     line-height: 1.04;
   }
 

@@ -32,6 +32,15 @@
   padding: 15px 24px;
 }
 
+.button-xl {
+  min-height: 72px;
+  padding: 12px 28px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
 .button-secondary {
   background: transparent;
   color: var(--accent);
@@ -41,6 +50,78 @@
 .button-secondary:hover {
   color: var(--white);
   border-color: var(--accent);
+}
+
+.button-ghost {
+  gap: 12px;
+  border-color: transparent;
+  background: transparent;
+  color: var(--black);
+  box-shadow: none;
+}
+
+.button-ghost:hover,
+.button-ghost:focus-visible {
+  transform: none;
+  border-color: transparent;
+  background: var(--button-ghost-hover-bg);
+  color: var(--black);
+  box-shadow: none;
+}
+
+.button-glass {
+  min-height: 56px;
+  gap: 12px;
+  padding: 12px 20px;
+  border-color: transparent;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--accent);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  white-space: nowrap;
+  backdrop-filter: blur(24px);
+  box-shadow: 0 14px 34px rgba(var(--text-rgb), 0.12);
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.button-glass:hover,
+.button-glass:focus-visible {
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--accent);
+}
+
+.button-oval-arrow {
+  gap: 12px;
+}
+
+.button-oval-arrow__icon {
+  position: relative;
+  display: inline-grid;
+  width: 40px;
+  height: 32px;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--white);
+  transform: translateX(0);
+  transition: width 0.18s ease, transform 0.18s ease;
+}
+
+.button-oval-arrow__icon::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--accent);
+  -webkit-mask: var(--icon-chevron-right) center / contain no-repeat;
+  mask: var(--icon-chevron-right) center / contain no-repeat;
+}
+
+.button-oval-arrow:hover .button-oval-arrow__icon,
+.button-oval-arrow:focus-visible .button-oval-arrow__icon {
+  width: 44px;
+  transform: translateX(4px);
 }
 
 .button-compact {
@@ -55,13 +136,17 @@
 }
 
 .button-arrow::after {
-  content: ">";
+  content: "";
   position: absolute;
   right: 18px;
-  font-weight: 800;
+  width: 20px;
+  height: 20px;
+  background-color: currentColor;
   opacity: 0;
   transform: translateX(-4px);
   transition: opacity 0.18s ease, transform 0.18s ease;
+  -webkit-mask: var(--icon-chevron-right) center / contain no-repeat;
+  mask: var(--icon-chevron-right) center / contain no-repeat;
 }
 
 .button-arrow:hover::after,

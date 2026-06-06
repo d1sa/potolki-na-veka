@@ -164,14 +164,18 @@
 }
 
 .dropdown-card::after {
-  content: ">";
+  content: "";
   position: absolute;
   right: 16px;
+  width: 20px;
+  height: 20px;
   color: var(--accent);
-  font-weight: 800;
+  background-color: currentColor;
   opacity: 0;
   transform: translateX(-4px);
   transition: opacity 0.18s ease, transform 0.18s ease;
+  -webkit-mask: var(--icon-chevron-right) center / contain no-repeat;
+  mask: var(--icon-chevron-right) center / contain no-repeat;
 }
 
 .dropdown-card:hover {

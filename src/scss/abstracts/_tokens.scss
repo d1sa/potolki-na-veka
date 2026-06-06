@@ -14,10 +14,12 @@
   --accent-hover: #0f4ee8;
   --graphite: #101828;
   --badge-bg: #ebf0f5;
+  --button-ghost-hover-bg: rgba(var(--text-rgb), 0.06);
   --hero-photo-bg: #eff6ff;
   --line: rgba(var(--text-rgb), 0.12);
   --line-strong: rgba(var(--text-rgb), 0.2);
   --shadow: 0 22px 60px rgba(var(--text-rgb), 0.08);
   --radius: 16px;
   --header-height: 78px;
+  --icon-chevron-right: url("assets/icons/chevron-right.svg");
 }
