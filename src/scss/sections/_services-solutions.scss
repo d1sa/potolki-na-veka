@@ -3,11 +3,11 @@
 }
 
 .services-grid .image-card:nth-child(odd) {
-  border-color: rgba(111, 115, 86, 0.22);
+  border-color: rgba(var(--accent-rgb), 0.18);
 }
 
 .solutions-grid .image-card:first-child,
 .solutions-grid .image-card:nth-child(2) {
-  background: linear-gradient(180deg, rgba(111, 115, 86, 0.08), #fff 56%);
-  border-color: rgba(111, 115, 86, 0.25);
+  background: linear-gradient(180deg, rgba(var(--accent-rgb), 0.06), var(--white) 56%);
+  border-color: rgba(var(--accent-rgb), 0.2);
 }

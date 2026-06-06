@@ -19,7 +19,7 @@
 .related-links a {
   padding: 10px 12px;
   border-radius: var(--radius);
-  border: 1px solid rgba(78, 82, 61, 0.28);
-  color: var(--accent-dark);
+  border: 1px solid rgba(var(--accent-rgb), 0.28);
+  color: var(--accent);
   font-weight: 800;
 }

@@ -23,7 +23,7 @@
   position: fixed;
   inset: 0;
   z-index: 100;
-  background: rgba(31, 31, 29, 0.28);
+  background: rgba(var(--text-rgb), 0.28);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.22s ease, visibility 0.22s ease;
@@ -138,7 +138,7 @@
 .mobile-nav .mobile-service-card:hover,
 .mobile-nav .mobile-service-card:focus-visible {
   transform: translateY(-1px);
-  border-color: rgba(111, 115, 86, 0.2);
+  border-color: rgba(var(--accent-rgb), 0.2);
   background: #fff;
 }
 
@@ -155,7 +155,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(31, 31, 29, 0.14));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(var(--text-rgb), 0.14));
 }
 
 .mobile-service-thumb img {

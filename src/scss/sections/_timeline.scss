@@ -28,7 +28,7 @@
   width: 32px;
   height: 3px;
   border-radius: 999px;
-  background: rgba(111, 115, 86, 0.28);
+  background: rgba(var(--accent-rgb), 0.28);
   margin-bottom: 10px;
 }
 
@@ -39,9 +39,9 @@
   place-items: center;
   border-radius: 50%;
   background: #fff;
-  border: 1px solid rgba(31, 31, 29, 0.12);
-  box-shadow: 0 8px 20px rgba(31, 31, 29, 0.06);
-  color: var(--accent-dark);
+  border: 1px solid rgba(var(--text-rgb), 0.12);
+  box-shadow: 0 8px 20px rgba(var(--text-rgb), 0.06);
+  color: var(--accent);
   font-weight: 800;
 }
 

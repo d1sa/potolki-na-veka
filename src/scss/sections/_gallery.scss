@@ -35,7 +35,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(31, 31, 29, 0) 36%, rgba(31, 31, 29, 0.74));
+  background: linear-gradient(180deg, rgba(var(--text-rgb), 0) 36%, rgba(var(--text-rgb), 0.74));
 }
 
 .gallery-card h3,

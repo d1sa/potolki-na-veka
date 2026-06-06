@@ -1,5 +1,5 @@
 .form-section {
-  background: linear-gradient(135deg, #eae3d8, #f8f6f1);
+  background: linear-gradient(135deg, var(--card-soft), var(--bg));
 }
 
 .lead-form {
@@ -25,7 +25,7 @@
   padding: 12px 14px;
   border: 1px solid var(--line-strong);
   border-radius: var(--radius);
-  background: #fff;
+  background: var(--white);
   color: var(--text);
 }
 
@@ -36,7 +36,7 @@
 .dropdown-trigger:focus,
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid rgba(111, 115, 86, 0.28);
+  outline: 3px solid rgba(var(--accent-rgb), 0.24);
   outline-offset: 2px;
 }
 
@@ -71,9 +71,9 @@ legend {
 }
 
 .choice-grid label:has(input:checked) {
-  border-color: rgba(78, 82, 61, 0.55);
-  background: rgba(111, 115, 86, 0.1);
-  box-shadow: inset 0 0 0 1px rgba(78, 82, 61, 0.12);
+  border-color: rgba(var(--accent-rgb), 0.55);
+  background: rgba(var(--accent-rgb), 0.1);
+  box-shadow: inset 0 0 0 1px rgba(var(--accent-rgb), 0.12);
 }
 
 .form-note,

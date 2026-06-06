@@ -23,7 +23,7 @@
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: rgba(31, 31, 29, 0.84);
+  background: rgba(var(--text-rgb), 0.84);
   color: #fff;
   font-weight: 800;
 }

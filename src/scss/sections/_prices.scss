@@ -1,5 +1,5 @@
 .price-section {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(239, 233, 223, 0.55));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(235, 240, 245, 0.65));
 }
 
 .price-layout {
@@ -27,8 +27,8 @@
   margin: 34px 0;
   padding: 18px;
   border-radius: var(--radius);
-  background: rgba(111, 115, 86, 0.1);
-  border: 1px solid rgba(111, 115, 86, 0.14);
+  background: rgba(var(--accent-rgb), 0.08);
+  border: 1px solid rgba(var(--accent-rgb), 0.14);
 }
 
 .price-note span {
@@ -36,7 +36,7 @@
   height: 28px;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(78, 82, 61, 0.35);
+  border: 1px solid rgba(var(--accent-rgb), 0.35);
   border-radius: 50%;
   color: var(--accent-dark);
   font-weight: 800;
@@ -70,8 +70,8 @@
   margin: 0;
   padding: 18px 22px;
   border-bottom: 1px solid var(--line);
-  background: rgba(248, 246, 241, 0.84);
-  color: var(--accent-dark);
+  background: rgba(235, 240, 245, 0.84);
+  color: var(--accent);
   font-size: 15px;
 }
 
@@ -84,18 +84,6 @@
   border-radius: 50%;
   background: currentColor;
   vertical-align: 1px;
-}
-
-.price-group:nth-child(2) h3 {
-  color: #6d5ca8;
-}
-
-.price-group:nth-child(3) h3 {
-  color: #a9691f;
-}
-
-.price-group:nth-child(4) h3 {
-  color: #62676f;
 }
 
 .price-row {

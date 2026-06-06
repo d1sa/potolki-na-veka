@@ -26,13 +26,13 @@ h3 {
   letter-spacing: 0;
 }
 
-.hero-copy > p:not(.eyebrow),
+.hero-copy > p:not(.eyebrow):not(.hero-location),
 .section-header p {
   color: var(--muted);
   font-size: 18px;
 }
 
-.hero-copy > p:not(.eyebrow) {
+.hero-copy > p:not(.eyebrow):not(.hero-location) {
   font-size: 17px;
   margin-bottom: 14px;
 }

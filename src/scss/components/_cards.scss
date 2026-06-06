@@ -19,8 +19,8 @@
 .gallery-card:hover,
 .mini-card-grid a:hover {
   transform: translateY(-4px);
-  border-color: rgba(111, 115, 86, 0.45);
-  box-shadow: 0 18px 42px rgba(31, 31, 29, 0.08);
+  border-color: rgba(var(--accent-rgb), 0.45);
+  box-shadow: 0 18px 42px rgba(var(--text-rgb), 0.08);
 }
 
 .image-card img,

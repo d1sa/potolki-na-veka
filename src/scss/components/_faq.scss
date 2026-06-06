@@ -56,12 +56,12 @@
 }
 
 .faq-panel a {
-  color: var(--accent-dark);
+  color: var(--accent);
   font-weight: 800;
   font-size: 14px;
   display: inline-flex;
   padding: 7px 10px;
-  border: 1px solid rgba(78, 82, 61, 0.22);
+  border: 1px solid rgba(var(--accent-rgb), 0.22);
   border-radius: var(--radius);
-  background: rgba(111, 115, 86, 0.08);
+  background: rgba(var(--accent-rgb), 0.08);
 }

@@ -1,16 +1,23 @@
 :root {
-  --bg: #f8f6f1;
-  --bg-strong: #efe9df;
+  --bg: #ffffff;
+  --bg-strong: #ebf0f5;
   --card: #ffffff;
-  --card-soft: #fbfaf7;
-  --text: #1f1f1d;
-  --muted: #77746e;
-  --accent: #6f7356;
-  --accent-dark: #4e523d;
-  --graphite: #34342f;
-  --line: rgba(31, 31, 29, 0.12);
-  --line-strong: rgba(31, 31, 29, 0.2);
-  --shadow: 0 22px 60px rgba(31, 31, 29, 0.08);
-  --radius: 8px;
+  --card-soft: #eff6ff;
+  --white: #ffffff;
+  --black: #000000;
+  --text: #101828;
+  --text-rgb: 16, 24, 40;
+  --muted: #4b4f57;
+  --accent: #155dfc;
+  --accent-rgb: 21, 93, 252;
+  --accent-dark: #155dfc;
+  --accent-hover: #0f4ee8;
+  --graphite: #101828;
+  --badge-bg: #ebf0f5;
+  --hero-photo-bg: #eff6ff;
+  --line: rgba(var(--text-rgb), 0.12);
+  --line-strong: rgba(var(--text-rgb), 0.2);
+  --shadow: 0 22px 60px rgba(var(--text-rgb), 0.08);
+  --radius: 16px;
   --header-height: 78px;
 }
