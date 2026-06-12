@@ -1,0 +1,5 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="mynaui:sofa">
+<path id="Vector" d="M10 24V26.6667M22 24V26.6667M6.4 13.1253C5.2 13.152 4 13.6947 4 14.6667V20C4 22.2093 5.612 24 7.6 24H24.4C26.388 24 28 22.2093 28 20V14.6667C28 13.584 26.8 13.0987 25.6 13.1253M6.4 13.1253C7.6 13.0987 8.8 13.584 8.8 14.6667C8.8 16.484 9.1 18.6667 11.4667 18.6667H20.5333C22.9 18.6667 23.2 16.484 23.2 14.6667C23.2 13.6933 24.4 13.1533 25.6 13.1253M6.4 13.1253V9.33333C6.4 7.124 8.012 5.33333 10 5.33333H22C23.988 5.33333 25.6 7.124 25.6 9.33333V13.1253" stroke="var(--stroke-0, black)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

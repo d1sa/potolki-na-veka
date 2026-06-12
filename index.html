@@ -398,52 +398,105 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-header reveal">
-            <span class="section-kicker">Помещения</span>
-            <h2>Подберём потолок под каждую комнату</h2>
-            <p>Для кухни, ванной, спальни, зала и детской подойдут разные решения по полотну, освещению и дополнительным элементам. Подскажем, что лучше выбрать под конкретное помещение, ремонт и бюджет.</p>
-          </div>
-          <div class="card-grid rooms-grid">
-            <a class="image-card reveal" href="/uslugi/pomeshcheniya/zal/">
-              <img src="assets/images/room-living.jpg" alt="Натяжной потолок в зале с люстрой и подсветкой">
-              <h3>Натяжной потолок в зал</h3>
-              <p>Для гостиной можно выбрать матовый, сатиновый или глянцевый потолок, добавить люстру, точечные светильники, подсветку или нишу под шторы.</p>
-            </a>
-            <a class="image-card reveal" href="/uslugi/pomeshcheniya/spalnya/">
-              <img src="assets/images/room-bedroom.jpg" alt="Натяжной потолок в спальне со спокойным освещением">
-              <h3>Натяжной потолок в спальню</h3>
-              <p>Для спальни подойдут спокойные матовые и сатиновые полотна, мягкое освещение и аккуратное примыкание к стенам.</p>
-            </a>
-            <a class="image-card reveal" href="/uslugi/pomeshcheniya/detskaya/">
-              <img src="assets/images/room-kids.jpg" alt="Натяжной потолок в детской комнате">
-              <h3>Натяжной потолок в детскую</h3>
-              <p>Практичное решение для комнаты ребёнка: ровная поверхность, спокойные цвета, комфортное освещение или фотопечать.</p>
-            </a>
-            <a class="image-card reveal" href="/uslugi/pomeshcheniya/kuhnya/">
-              <img src="assets/images/room-kitchen.jpg" alt="Натяжной потолок на кухне с рабочим освещением">
-              <h3>Натяжной потолок на кухню</h3>
-              <p>Поможем подобрать потолок для кухни с учётом освещения, рабочей зоны, люстры или трековых светильников.</p>
-            </a>
-            <a class="image-card reveal" href="/uslugi/pomeshcheniya/vannaya/">
-              <img src="assets/images/room-bathroom.jpg" alt="Натяжной потолок в ванной с точечными светильниками">
-              <h3>Натяжной потолок в ванную</h3>
-              <p>Для ванной чаще выбирают ПВХ-полотно и точечные светильники. Потолок помогает скрыть старую поверхность и получить аккуратный внешний вид.</p>
-            </a>
-            <a class="image-card reveal" href="/uslugi/pomeshcheniya/prihozhaya/">
-              <img src="assets/images/room-hallway.jpg" alt="Натяжной потолок в прихожей со светлым полотном">
-              <h3>Натяжной потолок в прихожую</h3>
-              <p>Светлое полотно и правильное освещение помогают сделать коридор визуально просторнее и аккуратнее.</p>
-            </a>
-            <a class="image-card reveal wide-card" href="/uslugi/pomeshcheniya/balkon/">
-              <img src="assets/images/room-balcony.jpg" alt="Натяжной потолок на балконе или лоджии">
-              <h3>Натяжной потолок на балкон или лоджию</h3>
-              <p>Материал подбирается с учётом температуры, остекления и условий эксплуатации помещения.</p>
-            </a>
-          </div>
-          <div class="section-action reveal">
-            <a class="button button-secondary" href="/uslugi/pomeshcheniya/">Смотреть потолки по помещениям</a>
+      <section class="section-card-layout rooms-section" aria-labelledby="rooms-title" data-rooms>
+        <div class="section-card">
+          <div class="section-card__content rooms-content">
+            <div class="rooms-title reveal">
+              <span class="section-kicker">Помещения</span>
+              <h2 id="rooms-title">Подберём потолок под каждую комнату</h2>
+              <p>Для кухни, ванной, спальни, зала и детской подойдут разные решения по полотну, освещению и дополнительным элементам. Подскажем, что лучше выбрать под конкретное помещение, ремонт и бюджет.</p>
+            </div>
+            <div class="rooms-showcase">
+              <div class="rooms-list">
+                <a class="rooms-list__item rooms-list__item--active reveal" href="/uslugi/pomeshcheniya/zal/" aria-expanded="true" data-room-item data-room-image="assets/images/room-living.jpg" data-room-image-alt="Натяжной потолок в зале с люстрой и подсветкой">
+                  <span class="rooms-list__heading">
+                    <span class="rooms-list__icon-wrap" aria-hidden="true"><img class="rooms-list__icon" src="assets/icons/room-sofa.svg" alt=""></span>
+                    <span>Натяжной потолок в зал</span>
+                  </span>
+                  <span class="rooms-list__details" aria-hidden="false">
+                    <span class="rooms-list__details-inner">
+                      <span class="rooms-list__text">Для гостиной можно выбрать матовый, сатиновый или глянцевый потолок, добавить люстру, точечные светильники, подсветку или нишу под шторы.</span>
+                      <span class="rooms-list__button">Подробнее</span>
+                    </span>
+                  </span>
+                </a>
+                <a class="rooms-list__item reveal" href="/uslugi/pomeshcheniya/spalnya/" aria-expanded="false" data-room-item data-room-image="assets/images/room-bedroom.jpg" data-room-image-alt="Натяжной потолок в спальне со спокойным освещением">
+                  <span class="rooms-list__heading">
+                    <span class="rooms-list__icon-wrap" aria-hidden="true"><img class="rooms-list__icon" src="assets/icons/room-bed.svg" alt=""></span>
+                    <span>Натяжной потолок в спальню</span>
+                  </span>
+                  <span class="rooms-list__details" aria-hidden="true">
+                    <span class="rooms-list__details-inner">
+                      <span class="rooms-list__text">Для спальни подойдут спокойные матовые и сатиновые полотна, мягкое освещение и аккуратное примыкание к стенам.</span>
+                      <span class="rooms-list__button">Подробнее</span>
+                    </span>
+                  </span>
+                </a>
+                <a class="rooms-list__item reveal" href="/uslugi/pomeshcheniya/detskaya/" aria-expanded="false" data-room-item data-room-image="assets/images/room-kids.jpg" data-room-image-alt="Натяжной потолок в детской комнате">
+                  <span class="rooms-list__heading">
+                    <span class="rooms-list__icon-wrap" aria-hidden="true"><img class="rooms-list__icon" src="assets/icons/room-bear.svg" alt=""></span>
+                    <span>Натяжной потолок в детскую</span>
+                  </span>
+                  <span class="rooms-list__details" aria-hidden="true">
+                    <span class="rooms-list__details-inner">
+                      <span class="rooms-list__text">Практичное решение для комнаты ребёнка: ровная поверхность, спокойные цвета, комфортное освещение или фотопечать.</span>
+                      <span class="rooms-list__button">Подробнее</span>
+                    </span>
+                  </span>
+                </a>
+                <a class="rooms-list__item reveal" href="/uslugi/pomeshcheniya/kuhnya/" aria-expanded="false" data-room-item data-room-image="assets/images/room-kitchen.jpg" data-room-image-alt="Натяжной потолок на кухне с рабочим освещением">
+                  <span class="rooms-list__heading">
+                    <span class="rooms-list__icon-wrap" aria-hidden="true"><img class="rooms-list__icon" src="assets/icons/room-coffee.svg" alt=""></span>
+                    <span>Натяжной потолок на кухню</span>
+                  </span>
+                  <span class="rooms-list__details" aria-hidden="true">
+                    <span class="rooms-list__details-inner">
+                      <span class="rooms-list__text">Поможем подобрать потолок для кухни с учётом освещения, рабочей зоны, люстры или трековых светильников.</span>
+                      <span class="rooms-list__button">Подробнее</span>
+                    </span>
+                  </span>
+                </a>
+                <a class="rooms-list__item reveal" href="/uslugi/pomeshcheniya/vannaya/" aria-expanded="false" data-room-item data-room-image="assets/images/room-bathroom.jpg" data-room-image-alt="Натяжной потолок в ванной с точечными светильниками">
+                  <span class="rooms-list__heading">
+                    <span class="rooms-list__icon-wrap" aria-hidden="true"><img class="rooms-list__icon" src="assets/icons/room-bath.svg" alt=""></span>
+                    <span>Натяжной потолок в ванную</span>
+                  </span>
+                  <span class="rooms-list__details" aria-hidden="true">
+                    <span class="rooms-list__details-inner">
+                      <span class="rooms-list__text">Для ванной чаще выбирают ПВХ-полотно и точечные светильники. Потолок помогает скрыть старую поверхность и получить аккуратный внешний вид.</span>
+                      <span class="rooms-list__button">Подробнее</span>
+                    </span>
+                  </span>
+                </a>
+                <a class="rooms-list__item reveal" href="/uslugi/pomeshcheniya/prihozhaya/" aria-expanded="false" data-room-item data-room-image="assets/images/room-hallway.jpg" data-room-image-alt="Натяжной потолок в прихожей со светлым полотном">
+                  <span class="rooms-list__heading">
+                    <span class="rooms-list__icon-wrap" aria-hidden="true"><img class="rooms-list__icon" src="assets/icons/room-door-open.svg" alt=""></span>
+                    <span>Натяжной потолок в прихожую</span>
+                  </span>
+                  <span class="rooms-list__details" aria-hidden="true">
+                    <span class="rooms-list__details-inner">
+                      <span class="rooms-list__text">Светлое полотно и правильное освещение помогают сделать коридор визуально просторнее и аккуратнее.</span>
+                      <span class="rooms-list__button">Подробнее</span>
+                    </span>
+                  </span>
+                </a>
+                <a class="rooms-list__item reveal" href="/uslugi/pomeshcheniya/balkon/" aria-expanded="false" data-room-item data-room-image="assets/images/room-balcony.jpg" data-room-image-alt="Натяжной потолок на балконе или лоджии">
+                  <span class="rooms-list__heading">
+                    <span class="rooms-list__icon-wrap" aria-hidden="true"><img class="rooms-list__icon" src="assets/icons/room-flower.svg" alt=""></span>
+                    <span>Натяжной потолок на балкон или лоджию</span>
+                  </span>
+                  <span class="rooms-list__details" aria-hidden="true">
+                    <span class="rooms-list__details-inner">
+                      <span class="rooms-list__text">Материал подбирается с учётом температуры, остекления и условий эксплуатации помещения.</span>
+                      <span class="rooms-list__button">Подробнее</span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="rooms-visual reveal" aria-hidden="true">
+                <img src="assets/images/room-living.jpg" alt="" data-rooms-visual>
+              </div>
+            </div>
           </div>
         </div>
       </section>

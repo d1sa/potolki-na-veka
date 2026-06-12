@@ -3,6 +3,7 @@ import { initHeader } from "./components/header.js";
 import { initHeroWorksPreview } from "./components/hero-works-preview.js";
 import { initMobileMenu } from "./components/mobile-menu.js";
 import { initReveal } from "./components/reveal.js";
+import { initRooms } from "./components/rooms.js";
 import { initServicesDropdown } from "./components/services-dropdown.js";
 
 const mobileMenu = initMobileMenu();
@@ -11,6 +12,7 @@ const heroWorksPreview = initHeroWorksPreview();
 
 initHeader();
 initFaq();
+initRooms();
 initReveal();
 
 document.addEventListener("keydown", (event) => {
