@@ -29,3 +29,74 @@
 .services-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+
+.section-card-layout {
+  padding: 12px;
+  background: var(--bg);
+  scroll-margin-top: 96px;
+}
+
+.section-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1660px;
+  margin-inline: auto;
+  padding: 20px;
+  border-radius: var(--section-card-radius);
+  background: transparent;
+  overflow: hidden;
+}
+
+.section-card--soft {
+  background: var(--card-soft);
+}
+
+.section-card--image-bg {
+  background: var(--card-soft);
+}
+
+.section-card--image-bg::before,
+.section-card--image-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.section-card--image-bg::before {
+  background: linear-gradient(
+    180deg,
+    rgba(239, 246, 255, 0.76) 0%,
+    rgba(239, 246, 255, 0.84) 49%
+  );
+  mix-blend-mode: hard-light;
+}
+
+.section-card--image-bg::after {
+  background: linear-gradient(
+    180deg,
+    rgba(239, 246, 255, 0) 33%,
+    rgba(239, 246, 255, 0.94) 100%
+  );
+}
+
+.section-card__background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.section-card__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1280px;
+  padding-block: 72px;
+}

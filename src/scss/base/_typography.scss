@@ -26,6 +26,17 @@ h3 {
   letter-spacing: 0;
 }
 
+.section-kicker,
+.approach-kicker {
+  display: block;
+  margin: 0;
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0;
+}
+
 .hero-copy > p:not(.eyebrow):not(.hero-location),
 .section-header p {
   color: var(--muted);

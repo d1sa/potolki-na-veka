@@ -4,12 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run build:styles",
-    "build:styles": "sass src/scss/main.scss styles.css --no-source-map",
-    "dev": "node dev-server.js",
-    "watch:styles": "sass src/scss/main.scss styles.css --watch --no-source-map"
+    "dev": "vite --host 127.0.0.1 --port 3000",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
   },
   "devDependencies": {
-    "sass": "^1.89.0"
+    "sass": "^1.89.0",
+    "vite": "^8.0.16"
   }
 }

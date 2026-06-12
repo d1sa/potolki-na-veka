@@ -16,10 +16,14 @@
   --badge-bg: #ebf0f5;
   --button-ghost-hover-bg: rgba(var(--text-rgb), 0.06);
   --hero-photo-bg: #eff6ff;
+  --surface-muted: #eceff3;
   --line: rgba(var(--text-rgb), 0.12);
   --line-strong: rgba(var(--text-rgb), 0.2);
   --shadow: 0 22px 60px rgba(var(--text-rgb), 0.08);
+  --shadow-soft-card: 0 4px 12px rgba(0, 0, 0, 0.06);
   --radius: 16px;
+  --section-card-radius: 60px;
+  --feature-card-radius: 58px;
   --header-height: 78px;
-  --icon-chevron-right: url("assets/icons/chevron-right.svg");
+  --icon-chevron-right: url("../../../assets/icons/chevron-right.svg");
 }

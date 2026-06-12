@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260606-21">
+    <link rel="stylesheet" href="/src/scss/main.scss">
   </head>
   <body>
     <header class="site-header" data-header>
@@ -265,36 +265,57 @@
         </div>
       </section>
 
-      <section class="section toned">
-        <div class="container split-section">
-          <div class="section-header reveal">
-            <span class="section-kicker">Подход</span>
-            <h2>Натяжные потолки для обычного ремонта — без лишних переплат</h2>
-            <p>«Потолки на века» — это установка натяжных потолков в Калуге для квартир, домов и новостроек. Мы не усложняем выбор и не навязываем лишние решения: подбираем потолок под конкретное помещение, задачу и бюджет.</p>
-            <p>Можно выбрать аккуратное ровное полотно без сложных элементов, потолок со встроенным освещением, нишу под карниз, теневой профиль, парящий контур или декоративную подсветку.</p>
-          </div>
-          <div class="position-visual reveal">
-            <img src="assets/images/positioning.jpg" alt="Современный ремонт квартиры с натяжным потолком">
-          </div>
-        </div>
-        <div class="container">
-          <div class="card-grid four compact">
-            <a class="text-card reveal" href="/uslugi/pomeshcheniya/">
-              <h3>Для квартиры</h3>
-              <p>Установим потолки в зал, спальню, детскую, кухню, ванную, прихожую или на балкон.</p>
-            </a>
-            <a class="text-card reveal" href="/uslugi/pomeshcheniya/">
-              <h3>Для новостройки</h3>
-              <p>Можно заранее рассчитать потолки во всей квартире, продумать освещение, карнизы и расположение светильников до завершения ремонта.</p>
-            </a>
-            <a class="text-card reveal" href="/uslugi/vidy-potolkov/pvh/">
-              <h3>Для ремонта без переплат</h3>
-              <p>Практичное решение под ваш бюджет: ПВХ-полотно, подходящий профиль и аккуратный монтаж без лишних элементов. Подскажем, где можно сэкономить без потери надёжности и аккуратного внешнего вида.</p>
-            </a>
-            <a class="text-card reveal" href="/uslugi/resheniya/tenevoj-potolok/">
-              <h3>Для современного интерьера</h3>
-              <p>Можно предусмотреть теневой потолок, парящий контур, нишу под карниз, LED-подсветку, трековый или линейный свет.</p>
-            </a>
+      <section class="section-card-layout approach-section" aria-labelledby="approach-title">
+        <div class="section-card section-card--image-bg">
+          <img class="section-card__background" src="assets/images/approach-background.png" alt="" aria-hidden="true">
+          <div class="section-card__content approach-content">
+            <div class="approach-copy reveal">
+              <p class="approach-kicker">Подход</p>
+              <h2 id="approach-title">Натяжные потолки для обычного ремонта — без лишних переплат</h2>
+              <p>Берём работу на себя от замера до установки: подберём полотно, профиль, освещение, карниз или нишу под ваше помещение, ремонт и бюджет.</p>
+            </div>
+            <div class="approach-cards">
+              <a class="approach-card reveal" href="/uslugi/pomeshcheniya/">
+                <span class="approach-card__icon" aria-hidden="true">
+                  <img src="assets/icons/approach-apartment.svg" alt="">
+                </span>
+                <h3>Для квартиры</h3>
+                <p>Установим потолки в зал, спальню, детскую, кухню, ванную, прихожую или на балкон.</p>
+                <span class="approach-card__arrow-wrap" aria-hidden="true">
+                  <span class="approach-card__arrow"></span>
+                </span>
+              </a>
+              <a class="approach-card reveal" href="/uslugi/pomeshcheniya/">
+                <span class="approach-card__icon" aria-hidden="true">
+                  <img src="assets/icons/approach-newbuild.svg" alt="">
+                </span>
+                <h3>Для новостройки</h3>
+                <p>Можно заранее рассчитать потолки во всей квартире, продумать освещение, карнизы и расположение светильников до завершения ремонта.</p>
+                <span class="approach-card__arrow-wrap" aria-hidden="true">
+                  <span class="approach-card__arrow"></span>
+                </span>
+              </a>
+              <a class="approach-card reveal" href="/uslugi/vidy-potolkov/pvh/">
+                <span class="approach-card__icon" aria-hidden="true">
+                  <img src="assets/icons/approach-budget.svg" alt="">
+                </span>
+                <h3>Для ремонта без переплат</h3>
+                <p>Практичное решение под ваш бюджет: ПВХ-полотно, подходящий профиль и аккуратный монтаж без лишних элементов. Подскажем, где можно сэкономить без потери надёжности.</p>
+                <span class="approach-card__arrow-wrap" aria-hidden="true">
+                  <span class="approach-card__arrow"></span>
+                </span>
+              </a>
+              <a class="approach-card reveal" href="/uslugi/resheniya/tenevoj-potolok/">
+                <span class="approach-card__icon" aria-hidden="true">
+                  <img src="assets/icons/approach-interior.svg" alt="">
+                </span>
+                <h3>Для современного интерьера</h3>
+                <p>Можно предусмотреть теневой потолок, парящий контур, нишу под карниз, LED-подсветку, трековый или линейный свет.</p>
+                <span class="approach-card__arrow-wrap" aria-hidden="true">
+                  <span class="approach-card__arrow"></span>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -778,6 +799,6 @@
       <a class="button button-small" href="/#zayavka">Оставить заявку</a>
     </div>
 
-    <script type="module" src="script.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
