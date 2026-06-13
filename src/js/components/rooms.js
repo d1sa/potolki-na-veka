@@ -1,6 +1,15 @@
 import { qs, qsa } from "../utils/dom.js";
 
 const AUTOPLAY_DURATION = 6500;
+const roomImageUrls = {
+  "assets/images/room-living.jpg": new URL("../../../assets/images/room-living.jpg", import.meta.url).href,
+  "assets/images/room-bedroom.jpg": new URL("../../../assets/images/room-bedroom.jpg", import.meta.url).href,
+  "assets/images/room-kids.jpg": new URL("../../../assets/images/room-kids.jpg", import.meta.url).href,
+  "assets/images/room-kitchen.jpg": new URL("../../../assets/images/room-kitchen.jpg", import.meta.url).href,
+  "assets/images/room-bathroom.jpg": new URL("../../../assets/images/room-bathroom.jpg", import.meta.url).href,
+  "assets/images/room-hallway.jpg": new URL("../../../assets/images/room-hallway.jpg", import.meta.url).href,
+  "assets/images/room-balcony.jpg": new URL("../../../assets/images/room-balcony.jpg", import.meta.url).href,
+};
 
 export function initRooms() {
   const section = qs("[data-rooms]");
@@ -71,7 +80,7 @@ export function initRooms() {
 
     if (!visual || !activeItem.dataset.roomImage) return;
 
-    visual.src = activeItem.dataset.roomImage;
+    visual.src = roomImageUrls[activeItem.dataset.roomImage] || activeItem.dataset.roomImage;
     visual.alt = activeItem.dataset.roomImageAlt || "";
 
     startAutoplay();
