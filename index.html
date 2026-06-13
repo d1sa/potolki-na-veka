@@ -546,52 +546,109 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-header reveal">
-            <span class="section-kicker">Материалы</span>
-            <h2>Выберите фактуру и материал потолка</h2>
-            <p>Каждый вариант отличается внешним видом, стоимостью и задачами. На замере подскажем, какое полотно лучше подойдёт для вашего помещения.</p>
-          </div>
-          <div class="card-grid types-grid">
-            <a class="texture-card reveal" href="/uslugi/vidy-potolkov/matovye/">
-              <img src="assets/images/type-matte.jpg" alt="Матовый натяжной потолок">
-              <h3>Матовые натяжные потолки</h3>
-              <p>Ровная поверхность без бликов. Универсальный вариант для спальни, зала, детской, кухни и прихожей.</p>
-            </a>
-            <a class="texture-card reveal" href="/uslugi/vidy-potolkov/glyancevye/">
-              <img src="assets/images/type-glossy.jpg" alt="Глянцевый натяжной потолок">
-              <h3>Глянцевые натяжные потолки</h3>
-              <p>Отражают свет и визуально делают пространство светлее. Хорошо подходят для небольших комнат и современных интерьеров.</p>
-            </a>
-            <a class="texture-card reveal" href="/uslugi/vidy-potolkov/satinovye/">
-              <img src="assets/images/type-satin.jpg" alt="Сатиновый натяжной потолок">
-              <h3>Сатиновые натяжные потолки</h3>
-              <p>Удачный баланс между сдержанностью матового полотна и мягким блеском глянцевого потолка. Хорошо подойдут, если хочется спокойный, но более выразительный вариант без сильных отражений.</p>
-            </a>
-            <a class="texture-card reveal" href="/uslugi/vidy-potolkov/tkanevye/">
-              <img src="assets/images/type-fabric.jpg" alt="Тканевый натяжной потолок">
-              <h3>Тканевые натяжные потолки</h3>
-              <p>Ровная матовая поверхность с естественным внешним видом. Подходят для помещений, где важны аккуратность, комфорт и устойчивость к условиям эксплуатации.</p>
-            </a>
-            <a class="texture-card reveal" href="/uslugi/vidy-potolkov/pvh/">
-              <img src="assets/images/type-pvc.jpg" alt="ПВХ натяжной потолок">
-              <h3>ПВХ натяжные потолки</h3>
-              <p>Практичный вариант для большинства стандартных помещений: кухни, ванной, зала, спальни и прихожей.</p>
-            </a>
-            <a class="texture-card reveal" href="/uslugi/vidy-potolkov/cvetnye/">
-              <img src="assets/images/type-colored.jpg" alt="Цветной натяжной потолок">
-              <h3>Цветные натяжные потолки</h3>
-              <p>Решение для индивидуального дизайна: от спокойных оттенков до выразительных акцентов.</p>
-            </a>
-            <a class="texture-card reveal wide-card" href="/uslugi/vidy-potolkov/fotopechat/">
-              <img src="assets/images/type-print.jpg" alt="Натяжной потолок с фотопечатью">
-              <h3>Натяжные потолки с фотопечатью</h3>
-              <p>Изображения, узоры и декоративные принты на полотне для детских, акцентных зон и нестандартных интерьеров.</p>
-            </a>
-          </div>
-          <div class="section-action reveal">
-            <a class="button button-secondary" href="/uslugi/vidy-potolkov/">Смотреть все виды потолков</a>
+      <section class="section-card-layout materials-section" aria-labelledby="materials-title">
+        <div class="section-card">
+          <div class="section-card__content materials-content">
+            <div class="section-header materials-title reveal">
+              <span class="section-kicker">Материалы</span>
+              <h2 id="materials-title">Выберите фактуру и материал потолка</h2>
+              <p>Каждый вариант отличается внешним видом, стоимостью и задачами. На замере подскажем, какое полотно лучше подойдёт для вашего помещения.</p>
+            </div>
+            <div class="materials-carousel reveal" data-materials-carousel>
+              <div class="materials-carousel__controls" aria-label="Навигация по материалам">
+                <button class="materials-carousel__button materials-carousel__button--prev" type="button" aria-label="Предыдущие материалы" data-materials-prev></button>
+                <button class="materials-carousel__button" type="button" aria-label="Следующие материалы" data-materials-next></button>
+              </div>
+              <blossom-carousel class="materials-carousel__track" aria-label="Виды материалов и фактур потолка">
+                <a class="materials-card" href="/uslugi/vidy-potolkov/matovye/">
+                  <span class="materials-card__image">
+                    <img src="assets/images/type-matte.jpg" alt="Матовый натяжной потолок">
+                  </span>
+                  <span class="materials-card__body">
+                    <span class="materials-card__title">Матовые натяжные потолки</span>
+                    <span class="materials-card__text">Ровная поверхность без бликов. Универсальный вариант для спальни, зала, детской, кухни и прихожей.</span>
+                  </span>
+                  <span class="materials-card__footer">
+                    <span class="materials-card__arrow" aria-hidden="true"></span>
+                  </span>
+                </a>
+                <a class="materials-card" href="/uslugi/vidy-potolkov/glyancevye/">
+                  <span class="materials-card__image">
+                    <img src="assets/images/type-glossy.jpg" alt="Глянцевый натяжной потолок">
+                  </span>
+                  <span class="materials-card__body">
+                    <span class="materials-card__title">Глянцевые натяжные потолки</span>
+                    <span class="materials-card__text">Отражают свет и визуально делают пространство светлее. Хорошо подходят для небольших комнат и современных интерьеров.</span>
+                  </span>
+                  <span class="materials-card__footer">
+                    <span class="materials-card__arrow" aria-hidden="true"></span>
+                  </span>
+                </a>
+                <a class="materials-card" href="/uslugi/vidy-potolkov/satinovye/">
+                  <span class="materials-card__image">
+                    <img src="assets/images/type-satin.jpg" alt="Сатиновый натяжной потолок">
+                  </span>
+                  <span class="materials-card__body">
+                    <span class="materials-card__title">Сатиновые натяжные потолки</span>
+                    <span class="materials-card__text">Удачный баланс между сдержанностью матового полотна и мягким блеском глянцевого потолка. Хорошо подойдут, если хочется спокойный, но более выразительный вариант без сильных отражений.</span>
+                  </span>
+                  <span class="materials-card__footer">
+                    <span class="materials-card__arrow" aria-hidden="true"></span>
+                  </span>
+                </a>
+                <a class="materials-card" href="/uslugi/vidy-potolkov/tkanevye/">
+                  <span class="materials-card__image">
+                    <img src="assets/images/type-fabric.jpg" alt="Тканевый натяжной потолок">
+                  </span>
+                  <span class="materials-card__body">
+                    <span class="materials-card__title">Тканевые натяжные потолки</span>
+                    <span class="materials-card__text">Ровная матовая поверхность с естественным внешним видом. Подходят для помещений, где важны аккуратность, комфорт и устойчивость к условиям эксплуатации.</span>
+                  </span>
+                  <span class="materials-card__footer">
+                    <span class="materials-card__arrow" aria-hidden="true"></span>
+                  </span>
+                </a>
+                <a class="materials-card" href="/uslugi/vidy-potolkov/pvh/">
+                  <span class="materials-card__image">
+                    <img src="assets/images/type-pvc.jpg" alt="ПВХ натяжной потолок">
+                  </span>
+                  <span class="materials-card__body">
+                    <span class="materials-card__title">ПВХ натяжные потолки</span>
+                    <span class="materials-card__text">Практичный вариант для большинства стандартных помещений: кухни, ванной, зала, спальни и прихожей.</span>
+                  </span>
+                  <span class="materials-card__footer">
+                    <span class="materials-card__arrow" aria-hidden="true"></span>
+                  </span>
+                </a>
+                <a class="materials-card" href="/uslugi/vidy-potolkov/cvetnye/">
+                  <span class="materials-card__image">
+                    <img src="assets/images/type-colored.jpg" alt="Цветной натяжной потолок">
+                  </span>
+                  <span class="materials-card__body">
+                    <span class="materials-card__title">Цветные натяжные потолки</span>
+                    <span class="materials-card__text">Решение для индивидуального дизайна: от спокойных оттенков до выразительных акцентов.</span>
+                  </span>
+                  <span class="materials-card__footer">
+                    <span class="materials-card__arrow" aria-hidden="true"></span>
+                  </span>
+                </a>
+                <a class="materials-card" href="/uslugi/vidy-potolkov/fotopechat/">
+                  <span class="materials-card__image">
+                    <img src="assets/images/type-print.jpg" alt="Натяжной потолок с фотопечатью">
+                  </span>
+                  <span class="materials-card__body">
+                    <span class="materials-card__title">Натяжные потолки с фотопечатью</span>
+                    <span class="materials-card__text">Изображения, узоры и декоративные принты на полотне для детских, акцентных зон и нестандартных интерьеров.</span>
+                  </span>
+                  <span class="materials-card__footer">
+                    <span class="materials-card__arrow" aria-hidden="true"></span>
+                  </span>
+                </a>
+              </blossom-carousel>
+            </div>
+            <div class="section-action reveal">
+              <a class="button button-secondary" href="/uslugi/vidy-potolkov/">Смотреть все виды потолков</a>
+            </div>
           </div>
         </div>
       </section>
