@@ -1,8 +1,12 @@
-.approach-content {
+.approach-description {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 20px;
   padding-bottom: 24px;
+}
+
+.approach-section .approach-kicker {
+  color: var(--topbar-accent);
 }
 
 .approach-copy {
@@ -27,7 +31,7 @@
 .approach-copy p:not(.approach-kicker) {
   max-width: 540px;
   margin: 0;
-  color: var(--black);
+  color: var(--text);
   font-size: 22px;
   font-weight: 400;
   line-height: 34px;
@@ -37,9 +41,11 @@
   grid-column: span 6;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-auto-rows: 1fr;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-auto-flow: column;
   gap: 16px;
-  min-height: 694px;
+  height: 720px;
+  min-height: 720px;
 }
 
 .approach-card {
@@ -48,7 +54,7 @@
   align-items: flex-start;
   min-height: 0;
   padding: 24px;
-  border-radius: var(--feature-card-radius);
+  border-radius: var(--approach-card-radius);
   background: var(--card);
   box-shadow: var(--shadow-soft-card);
   color: inherit;
@@ -67,7 +73,7 @@
   width: 64px;
   height: 64px;
   border-radius: 64px;
-  background: var(--accent);
+  background: var(--topbar-accent);
 }
 
 .approach-card__icon img {
@@ -86,7 +92,7 @@
 
 .approach-card p {
   margin: 0;
-  color: var(--muted);
+  color: var(--muted-deep);
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -106,7 +112,7 @@
   min-width: 48px;
   height: 36px;
   border-radius: 1000px;
-  background: var(--surface-muted);
+  background: var(--hero-badge-bg);
   color: var(--text);
 }
 
@@ -120,7 +126,15 @@
 }
 
 @media (max-width: 1180px) {
-  .approach-content {
+  .approach-section .section-card {
+    border-radius: 36px;
+  }
+
+  .approach-section .section-card__content {
+    padding-block: 56px;
+  }
+
+  .approach-description {
     grid-template-columns: 1fr;
     gap: 32px;
   }
@@ -136,6 +150,7 @@
   }
 
   .approach-cards {
+    height: auto;
     min-height: auto;
   }
 
@@ -145,20 +160,20 @@
 }
 
 @media (max-width: 820px) {
-  .section-card-layout {
-    padding: 8px;
+  .approach-section.section-card-layout {
+    padding-inline: 12px;
   }
 
-  .section-card {
+  .approach-section .section-card {
     padding: 12px;
-    border-radius: 32px;
+    border-radius: 28px;
   }
 
-  .section-card__content {
-    padding-block: 40px;
+  .approach-section .section-card__content {
+    padding-block: 32px;
   }
 
-  .approach-content {
+  .approach-description {
     gap: 28px;
     padding-bottom: 4px;
   }
@@ -179,13 +194,15 @@
 
   .approach-cards {
     grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-flow: row;
     grid-auto-rows: auto;
   }
 
   .approach-card {
     min-height: 240px;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 28px;
   }
 
   .approach-card__icon {
