@@ -12,17 +12,35 @@
   </head>
   <body>
     <header class="site-header" data-header>
-      <div class="container header-inner">
-        <a class="brand" href="%BASE_URL%" aria-label="Потолки на века">
-          <span class="brand-name">Потолки на века</span>
-          <span class="brand-subtitle">Натяжные потолки в Калуге</span>
+      <div class="topbar-meta-row">
+        <div class="topbar-container topbar-meta-row__inner">
+          <span class="topbar-logo-space" aria-hidden="true"></span>
+          <div class="header-meta" aria-label="Информация о компании">
+            <span class="header-meta__address">
+              <img src="assets/icons/map-marker-fill.svg" alt="" width="16" height="16">
+              <span>г. Калуга, ул. Дзержинского 1/46</span>
+            </span>
+            <span>Пн-Сб: 09:00 до 18:00</span>
+          </div>
+          <div class="topbar-contact">
+            <span class="topbar-phone-icon" aria-hidden="true">
+              <img src="assets/icons/phone-fill.svg" alt="" width="14" height="14">
+            </span>
+            <a class="topbar-phone" href="tel:+74842230015">+7 (4842) 23-00-15</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="topbar-container header-inner">
+        <a class="brand brand--topbar" href="%BASE_URL%" aria-label="Потолки на века">
+          <img src="assets/icons/topbar-logo.svg" alt="Потолки на века" width="129" height="50">
         </a>
 
         <nav class="main-nav" aria-label="Основное меню">
           <div class="nav-dropdown">
             <button class="nav-link dropdown-trigger" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="services-dropdown">
               Услуги
-              <span aria-hidden="true">▾</span>
+              <span class="nav-link__chevron" aria-hidden="true"></span>
             </button>
             <div class="services-dropdown" id="services-dropdown">
               <div class="dropdown-layout">
@@ -85,14 +103,8 @@
           <a class="nav-link" href="%BASE_URL%kontakty/">Контакты</a>
         </nav>
 
-        <div class="header-meta">
-          <span>Калуга и Калужская область</span>
-          <span>Пн–Сб: 09:00–18:00</span>
-        </div>
-
         <div class="header-actions">
-          <a class="phone-link" href="tel:+79000000000">+7 (900) 000-00-00</a>
-          <a class="button button-small" href="%BASE_URL%#zayavka">Оставить заявку</a>
+          <a class="button button-topbar" href="%BASE_URL%#zayavka">Оставить заявку</a>
         </div>
 
         <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-open>
@@ -103,12 +115,11 @@
       </div>
     </header>
 
-    <div class="mobile-menu" data-mobile-menu aria-hidden="true">
+    <div class="mobile-menu" data-mobile-menu aria-hidden="true" inert>
       <div class="mobile-panel">
         <div class="mobile-head">
-          <div class="brand">
-            <span class="brand-name">Потолки на века</span>
-            <span class="brand-subtitle">Натяжные потолки в Калуге</span>
+          <div class="brand brand--topbar">
+            <img src="assets/icons/topbar-logo.svg" alt="Потолки на века" width="129" height="50">
           </div>
           <button class="mobile-close" type="button" aria-label="Закрыть меню" data-menu-close>×</button>
         </div>
@@ -118,7 +129,7 @@
               Услуги
               <span aria-hidden="true">▾</span>
             </button>
-            <div class="mobile-services-list" id="mobile-services-list">
+            <div class="mobile-services-list" id="mobile-services-list" inert>
               <a class="mobile-service-card" href="%BASE_URL%uslugi/pomeshcheniya/">
                 <span class="mobile-service-thumb"><img src="assets/images/services-rooms.jpg" alt=""></span>
                 <span>По помещениям</span>
@@ -151,116 +162,156 @@
           <a href="%BASE_URL%kontakty/">Контакты</a>
         </nav>
         <div class="mobile-meta">
-          <span>Калуга и Калужская область</span>
-          <span>Пн–Сб: 09:00–18:00</span>
-          <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+          <span>г. Калуга, ул. Дзержинского 1/46</span>
+          <span>Пн-Сб: 09:00 до 18:00</span>
+          <a href="tel:+74842230015">+7 (4842) 23-00-15</a>
         </div>
         <a class="button" href="%BASE_URL%#zayavka">Оставить заявку</a>
       </div>
     </div>
 
     <main>
-      <section class="hero section" id="top">
-        <div class="container hero-layout">
-          <div class="hero-copy reveal">
-            <div class="hero-heading">
-              <a class="hero-works-preview" href="%BASE_URL%raboty/" data-hero-works aria-label="Смотреть наши работы">
-                <div class="hero-works-photos" aria-hidden="true">
-                  <span class="hero-work-photo hero-work-photo-led">
-                    <img src="assets/images/lighting-led.jpg" alt="">
+      <section class="hero section-card-layout" id="top">
+        <div class="section-card hero-card">
+          <div class="section-card__content hero-layout">
+            <div class="hero-top">
+              <div class="hero-copy reveal">
+                <a class="hero-works-preview" href="%BASE_URL%raboty/" data-hero-works aria-label="Смотреть наши работы">
+                  <div class="hero-works-photos" aria-hidden="true">
+                    <span class="hero-work-photo hero-work-photo-led">
+                      <img src="assets/images/lighting-led.jpg" alt="">
+                    </span>
+                    <span class="hero-work-photo hero-work-photo-gx53">
+                      <img src="assets/images/lighting-gx53.jpg" alt="">
+                    </span>
+                    <span class="hero-work-photo hero-work-photo-chandelier">
+                      <img src="assets/images/lighting-chandelier.jpg" alt="">
+                    </span>
+                  </div>
+                  <span class="hero-works-link button button-glass button-oval-arrow">
+                    <span>Наши работы</span>
+                    <span class="button-oval-arrow__icon" aria-hidden="true"></span>
                   </span>
-                  <span class="hero-work-photo hero-work-photo-gx53">
-                    <img src="assets/images/lighting-gx53.jpg" alt="">
-                  </span>
-                  <span class="hero-work-photo hero-work-photo-chandelier">
-                    <img src="assets/images/lighting-chandelier.jpg" alt="">
-                  </span>
+                </a>
+                <div class="hero-text-content">
+                  <div class="hero-heading">
+                    <p class="hero-location">Калуга и Калужская область</p>
+                    <h1>Установка натяжных потолков в Калуге под ключ</h1>
+                  </div>
+                  <p class="eyebrow">Аккуратный монтаж — спокойствие после ремонта</p>
                 </div>
-                <span class="hero-works-link button button-glass button-oval-arrow">
-                  <span>Наши работы</span>
-                  <span class="button-oval-arrow__icon" aria-hidden="true"></span>
-                </span>
-              </a>
-              <p class="hero-location">Калуга и Калужская область</p>
-              <h1>Установка натяжных потолков в Калуге под ключ</h1>
-            </div>
-            <p class="eyebrow">Аккуратный монтаж — спокойствие после ремонта</p>
-          </div>
-          <div class="hero-actions reveal">
-            <a class="button button-xl" href="%BASE_URL%#zayavka">Подобрать потолок и узнать цену</a>
-            <a class="button button-xl button-ghost phone-inline" href="tel:+79000000000">+7 (900) 000-00-00</a>
-          </div>
-          <div class="hero-visual reveal">
-            <img src="assets/images/hero.jpg" alt="Современная гостиная с натяжным потолком и встроенным освещением">
-            <div class="visual-note">
-              <span class="visual-icon" aria-hidden="true"></span>
-              <div>
-                <strong>Монтаж под ключ</strong>
-                <small>Замер, подбор, установка</small>
+                <div class="hero-action-group">
+                  <div class="hero-actions">
+                    <a class="button button-xl" href="%BASE_URL%#zayavka">Подобрать потолок и узнать цену</a>
+                    <a class="button button-xl button-ghost phone-inline" href="tel:+79000000000">+7 (900) 000-00-00</a>
+                  </div>
+                  <div class="hero-install-line">
+                    <span class="hero-install-line__icon" aria-hidden="true"></span>
+                    <span><strong>Монтаж под ключ</strong> <em>Замер, подбор, установка</em></span>
+                  </div>
+                </div>
               </div>
+
+              <form class="hero-aside-form reveal" action="#" method="post">
+                <img class="hero-aside-form__photo" src="assets/images/hero.jpg" alt="Современная гостиная с натяжным потолком и встроенным освещением">
+                <span class="hero-aside-form__overlay" aria-hidden="true"></span>
+                <div class="hero-aside-form__title">
+                  <span class="hero-aside-form__badge">
+                    <span class="hero-aside-form__badge-icon" aria-hidden="true"></span>
+                    Замерщик бесплатно
+                  </span>
+                  <p>Поможем выбрать натяжные потолки для квартиры, дома или офиса</p>
+                </div>
+                <div class="hero-aside-form__content">
+                  <div class="hero-aside-form__fields">
+                    <label>
+                      <span class="sr-only">Ваше имя</span>
+                      <input type="text" name="hero-name" autocomplete="name" placeholder="Ваше имя">
+                    </label>
+                    <label>
+                      <span class="sr-only">Телефон</span>
+                      <input type="tel" name="hero-phone" autocomplete="tel" placeholder="+7">
+                    </label>
+                  </div>
+                  <button class="button hero-aside-form__button" type="submit">Отправить</button>
+                  <p class="hero-aside-form__note">Отправляя данные в форме вы соглашаетесь с политикой обработки персональных данных</p>
+                </div>
+              </form>
             </div>
-          </div>
-          <div class="hero-benefits reveal">
-            <ul class="hero-badges" aria-label="Преимущества">
-              <li>Бесплатный замер по Калуге</li>
-              <li>ПВХ и тканевые полотна</li>
-              <li>Карнизы, ниши, теневые и парящие решения</li>
-              <li>Монтаж натяжных потолков под ключ</li>
-              <li>Светильники, люстры, LED-лента и трековый свет</li>
-              <li>Гарантийные условия фиксируются в договоре</li>
-            </ul>
-          </div>
-          <div class="hero-description-grid reveal">
-            <div class="hero-lead">
-              <span aria-hidden="true"></span>
-              <p>Берём работу на себя от замера до установки: подберём полотно, профиль, освещение, карниз или нишу под ваше помещение, ремонт и бюджет.</p>
+
+            <div class="hero-benefits reveal">
+              <ul class="hero-badges" aria-label="Преимущества">
+                <li><span class="hero-badge-icon hero-badge-icon--measure" aria-hidden="true"></span><span>Бесплатный замер по Калуге</span></li>
+                <li><span class="hero-badge-icon hero-badge-icon--canvas" aria-hidden="true"></span><span>ПВХ и тканевые полотна</span></li>
+                <li><span class="hero-badge-icon hero-badge-icon--profiles" aria-hidden="true"></span><span>Карнизы, ниши, теневые и парящие решения</span></li>
+                <li><span class="hero-badge-icon hero-badge-icon--install" aria-hidden="true"></span><span>Монтаж натяжных потолков под ключ</span></li>
+                <li><span class="hero-badge-icon hero-badge-icon--lighting" aria-hidden="true"></span><span>Светильники, люстры, LED-лента и трековый свет</span></li>
+                <li><span class="hero-badge-icon hero-badge-icon--warranty" aria-hidden="true"></span><span>Гарантийные условия фиксируются в договоре</span></li>
+              </ul>
             </div>
-            <p class="hero-description">Монтируем натяжные потолки для квартир, домов и новостроек: от аккуратного ровного полотна без сложных элементов до решений со светильниками, люстрами, LED-подсветкой, теневыми и парящими профилями.</p>
+            <div class="hero-description-grid reveal">
+              <div class="hero-lead">
+                <span aria-hidden="true"></span>
+                <p>Берём работу на себя от замера до установки: подберём полотно, профиль, освещение, карниз или нишу под ваше помещение, ремонт и бюджет.</p>
+              </div>
+              <p class="hero-description">Монтируем натяжные потолки для квартир, домов и новостроек: от аккуратного ровного полотна без сложных элементов до решений со светильниками, люстрами, LED-подсветкой, теневыми и парящими профилями.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="uslugi-na-glavnoy">
-        <div class="container">
-          <div class="section-header reveal">
-            <span class="section-kicker">Услуги</span>
-            <h2>Подберём потолок под вашу задачу</h2>
-            <p>Варианты потолков могут быть разными: от аккуратного ровного полотна без сложных элементов до потолка со светильниками, скрытым карнизом, теневым профилем или декоративной подсветкой. Ниже собрали основные направления, а на замере подскажем, что лучше подойдёт под вашу комнату, ремонт и бюджет.</p>
-          </div>
-          <div class="card-grid services-grid">
-            <a class="image-card reveal" href="%BASE_URL%uslugi/pomeshcheniya/">
-              <img src="assets/images/services-rooms.jpg" alt="Натяжные потолки по помещениям в квартире">
-              <h3>Потолки по помещениям</h3>
-              <p>Покажем варианты по полотну, освещению и дополнительным элементам для кухни, ванной, спальни, зала, прихожей, балкона или лоджии. Подскажем, какое решение будет практичным для конкретной комнаты и без лишних переплат.</p>
-            </a>
-            <a class="image-card reveal" href="%BASE_URL%uslugi/vidy-potolkov/">
-              <img src="assets/images/services-types.jpg" alt="Фактуры матового глянцевого сатинового и тканевого потолка">
-              <h3>Виды потолков</h3>
-              <p>Матовые, глянцевые, сатиновые, тканевые, ПВХ, цветные потолки и фотопечать. Покажем, чем отличаются разные варианты, и поможем выбрать потолок под вашу комнату, стиль ремонта и бюджет.</p>
-            </a>
-            <a class="image-card reveal" href="%BASE_URL%uslugi/resheniya/">
-              <img src="assets/images/services-solutions.jpg" alt="Популярные решения для натяжных потолков с подсветкой">
-              <h3>Популярные решения</h3>
-              <p>Поможем выбрать решение под ваш ремонт: аккуратное ровное полотно, потолок со встроенным освещением, люстрой, теневым профилем, парящим контуром или двухуровневой конструкцией. Объясним, где такое решение уместно, а где можно не переплачивать.</p>
-            </a>
-            <a class="image-card reveal" href="%BASE_URL%uslugi/osveshchenie/">
-              <img src="assets/images/services-lighting.jpg" alt="Освещение для натяжных потолков GX53 LED лента и трековый свет">
-              <h3>Освещение</h3>
-              <p>Продумаем световое решение для вашей комнаты: светильники GX53, люстру, LED-ленту, трековые или линейные светильники. Подскажем, как расположить свет, чтобы потолок выглядел аккуратно, а освещение было комфортным в повседневном использовании.</p>
-            </a>
-            <a class="image-card reveal" href="%BASE_URL%uslugi/karnizy/">
-              <img src="assets/images/services-cornices.jpg" alt="Скрытая ниша под шторы в натяжном потолке">
-              <h3>Карнизы и ниши</h3>
-              <p>Закладная под обычный карниз, скрытая ниша под шторы или ниша с подсветкой. Обсудим эти элементы на замере, чтобы сразу заложить их в конструкцию потолка и аккуратно оформить зону окна.</p>
-            </a>
-            <a class="image-card reveal" href="%BASE_URL%uslugi/profili/">
-              <img src="assets/images/services-profiles.jpg" alt="Профили и примыкания для натяжного потолка">
-              <h3>Профили и примыкания</h3>
-              <p>Подберём профиль под задачу и бюджет: пластиковый, алюминиевый, теневой, парящий или профиль для тканевых потолков. Объясним разницу простым языком и поможем выбрать надёжное решение без лишних затрат.</p>
-            </a>
-          </div>
-          <div class="section-action reveal">
-            <a class="button button-secondary" href="%BASE_URL%uslugi/">Все услуги</a>
+      <section class="section-card-layout services-section" id="uslugi-na-glavnoy" aria-labelledby="services-title">
+        <div class="section-card">
+          <div class="section-card__content services-section__content">
+            <div class="section-header services-section__header reveal">
+              <span class="section-kicker">Услуги</span>
+              <h2 id="services-title">Подберём потолок под вашу задачу</h2>
+              <p>Варианты потолков могут быть разными: от аккуратного ровного полотна без сложных элементов до потолка со светильниками, скрытым карнизом, теневым профилем или декоративной подсветкой. Ниже собрали основные направления, а на замере подскажем, что лучше подойдёт под вашу комнату, ремонт и бюджет.</p>
+            </div>
+            <div class="card-grid services-grid">
+              <a class="image-card services-card reveal" href="%BASE_URL%uslugi/pomeshcheniya/">
+                <img src="assets/images/services-rooms.jpg" alt="Натяжные потолки по помещениям в квартире">
+                <h3>Потолки по помещениям</h3>
+                <p>Покажем варианты по полотну, освещению и дополнительным элементам для кухни, ванной, спальни, зала, прихожей, балкона или лоджии. Подскажем, какое решение будет практичным для конкретной комнаты и без лишних переплат.</p>
+                <span class="services-card__arrow" aria-hidden="true"></span>
+              </a>
+              <a class="image-card services-card reveal" href="%BASE_URL%uslugi/vidy-potolkov/">
+                <img src="assets/images/services-types.jpg" alt="Фактуры матового глянцевого сатинового и тканевого потолка">
+                <h3>Виды потолков</h3>
+                <p>Матовые, глянцевые, сатиновые, тканевые, ПВХ, цветные потолки и фотопечать. Покажем, чем отличаются разные варианты, и поможем выбрать потолок под вашу комнату, стиль ремонта и бюджет.</p>
+                <span class="services-card__arrow" aria-hidden="true"></span>
+              </a>
+              <a class="image-card services-card reveal" href="%BASE_URL%uslugi/resheniya/">
+                <img src="assets/images/services-solutions.jpg" alt="Популярные решения для натяжных потолков с подсветкой">
+                <h3>Популярные решения</h3>
+                <p>Поможем выбрать решение под ваш ремонт: аккуратное ровное полотно, потолок со встроенным освещением, люстрой, теневым профилем, парящим контуром или двухуровневой конструкцией. Объясним, где такое решение уместно, а где можно не переплачивать.</p>
+                <span class="services-card__arrow" aria-hidden="true"></span>
+              </a>
+              <a class="image-card services-card reveal" href="%BASE_URL%uslugi/osveshchenie/">
+                <img src="assets/images/services-lighting.jpg" alt="Освещение для натяжных потолков GX53 LED лента и трековый свет">
+                <h3>Освещение</h3>
+                <p>Продумаем световое решение для вашей комнаты: светильники GX53, люстру, LED-ленту, трековые или линейные светильники. Подскажем, как расположить свет, чтобы потолок выглядел аккуратно, а освещение было комфортным в повседневном использовании.</p>
+                <span class="services-card__arrow" aria-hidden="true"></span>
+              </a>
+              <a class="image-card services-card reveal" href="%BASE_URL%uslugi/karnizy/">
+                <img src="assets/images/services-cornices.jpg" alt="Скрытая ниша под шторы в натяжном потолке">
+                <h3>Карнизы и ниши</h3>
+                <p>Закладная под обычный карниз, скрытая ниша под шторы или ниша с подсветкой. Обсудим эти элементы на замере, чтобы сразу заложить их в конструкцию потолка и аккуратно оформить зону окна.</p>
+                <span class="services-card__arrow" aria-hidden="true"></span>
+              </a>
+              <a class="image-card services-card reveal" href="%BASE_URL%uslugi/profili/">
+                <img src="assets/images/services-profiles.jpg" alt="Профили и примыкания для натяжного потолка">
+                <h3>Профили и примыкания</h3>
+                <p>Подберём профиль под задачу и бюджет: пластиковый, алюминиевый, теневой, парящий или профиль для тканевых потолков. Объясним разницу простым языком и поможем выбрать надёжное решение без лишних затрат.</p>
+                <span class="services-card__arrow" aria-hidden="true"></span>
+              </a>
+            </div>
+            <div class="services-section__action reveal">
+              <a class="services-section__button" href="%BASE_URL%#zayavka">
+                <span>Заказать потолок</span>
+                <span class="services-section__button-icon" aria-hidden="true"></span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

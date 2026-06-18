@@ -24,12 +24,26 @@
   --line-strong: rgba(var(--text-rgb), 0.2);
   --line-neutral: rgba(0, 0, 0, 0.1);
   --accent-line-soft: rgba(var(--accent-rgb), 0.35);
+  --topbar-accent: #268ceb;
+  --topbar-accent-rgb: 38, 140, 235;
+  --topbar-hover-bg: #f2f5fa;
+  --topbar-border: #eaedf2;
+  --topbar-phone-border: #bac6d9;
+  --hero-badge-bg: #f1f3f6;
+  --hero-aside-overlay: #f2f5fa;
+  --success: #2bb109;
+  --success-hover: #1fa500;
   --shadow: 0 22px 60px rgba(var(--text-rgb), 0.08);
   --shadow-soft-card: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-form-field: 0 4px 8px rgba(0, 0, 0, 0.08);
+  --shadow-topbar: 0 10px 40px rgba(0, 0, 0, 0.06);
   --radius: 16px;
   --section-card-radius: 60px;
   --card-large-radius: 40px;
   --feature-card-radius: 58px;
-  --header-height: 78px;
+  --service-card-radius: 48px;
+  --service-card-image-radius: 24px;
+  --header-height: 141px;
   --icon-chevron-right: url("../../../assets/icons/chevron-right.svg");
+  --icon-chevron-down: url("../../../assets/icons/chevron-down.svg");
 }
