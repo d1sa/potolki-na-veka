@@ -466,37 +466,56 @@
         </div>
       </section>
 
-      <section class="section form-section" id="zayavka">
-        <div class="container form-grid">
-          <div class="section-header reveal">
-            <span class="section-kicker">Заявка</span>
-            <h2>Поможем подобрать потолок и рассчитать стоимость</h2>
-            <p>Оставьте номер — мы перезвоним, уточним помещение, площадь, пожелания по полотну, освещению, карнизу и подготовим предварительный расчёт.</p>
-          </div>
-          <form class="lead-form reveal" action="#" method="post">
-            <label>
-              <span>Имя</span>
-              <input type="text" name="name" autocomplete="name">
-            </label>
-            <label>
-              <span>Телефон</span>
-              <input type="tel" name="phone" autocomplete="tel">
-            </label>
-            <fieldset>
-              <legend>Что нужно сделать?</legend>
-              <div class="choice-grid">
-                <label><input type="radio" name="task" value="Потолок в одной комнате"> <span>Потолок в одной комнате</span></label>
-                <label><input type="radio" name="task" value="Потолки во всей квартире"> <span>Потолки во всей квартире</span></label>
-                <label><input type="radio" name="task" value="Потолок со встроенным освещением"> <span>Потолок со встроенным освещением</span></label>
-                <label><input type="radio" name="task" value="Потолок с люстрой"> <span>Потолок с люстрой</span></label>
-                <label><input type="radio" name="task" value="Ниша под карниз"> <span>Ниша под карниз</span></label>
-                <label><input type="radio" name="task" value="Нужна консультация"> <span>Нужна консультация</span></label>
+      <section class="section-card-layout application-section" id="zayavka" aria-labelledby="application-title">
+        <div class="section-card section-card--soft section-card--image-bg application-card">
+          <img class="section-card__background application-card__background" src="assets/images/application-background.png" alt="" aria-hidden="true">
+          <div class="section-card__content application-content">
+            <div class="application-layout">
+              <div class="application-copy reveal">
+                <span class="section-kicker">Заявка</span>
+                <h2 id="application-title">
+                  <span>Поможем подобрать</span>
+                  <span>потолок и рассчитать</span>
+                  <span>стоимость</span>
+                </h2>
+                <p>Оставьте номер — мы перезвоним, уточним помещение, площадь, пожелания по полотну, освещению, карнизу и подготовим предварительный расчёт.</p>
+                <div class="application-badges" aria-label="Преимущества заявки">
+                  <span class="application-badge application-badge--success">
+                    <img src="assets/icons/application-certificate.svg" alt="" aria-hidden="true">
+                    <span>Замерщик бесплатно</span>
+                  </span>
+                  <span class="application-badge application-badge--accent">
+                    <img src="assets/icons/application-key.svg" alt="" aria-hidden="true">
+                    <span>Монтаж под&nbsp;ключ</span>
+                  </span>
+                </div>
               </div>
-            </fieldset>
-            <button class="button" type="submit">Оставить заявку</button>
-            <p class="form-note">Точная стоимость рассчитывается после замера. На цену влияют площадь, выбранное полотно, профиль, освещение, углы, трубы, карниз и дополнительные работы.</p>
-            <a class="privacy-link" href="%BASE_URL%privacy-policy/">Политика обработки персональных данных</a>
-          </form>
+              <form class="lead-form lead-form--application application-form reveal" action="#" method="post">
+                <label>
+                  <span>Имя</span>
+                  <input type="text" name="name" autocomplete="name" placeholder="Ваше имя">
+                </label>
+                <label>
+                  <span>Телефон</span>
+                  <input type="tel" name="phone" autocomplete="tel" placeholder="Ваш телефон">
+                </label>
+                <fieldset>
+                  <legend>Что нужно сделать?</legend>
+                  <div class="choice-grid">
+                    <label><input type="radio" name="task" value="Потолок в одной комнате" checked> <span>Потолок в одной комнате</span></label>
+                    <label><input type="radio" name="task" value="Потолки во всей квартире"> <span>Потолки во всей квартире</span></label>
+                    <label><input type="radio" name="task" value="Потолок со встроенным освещением"> <span>Потолок со встроенным освещением</span></label>
+                    <label><input type="radio" name="task" value="Потолок с люстрой"> <span>Потолок с люстрой</span></label>
+                    <label><input type="radio" name="task" value="Ниша под карниз"> <span>Ниша под карниз</span></label>
+                    <label><input type="radio" name="task" value="Нужна консультация"> <span>Нужна консультация</span></label>
+                  </div>
+                </fieldset>
+                <button class="button button-xl application-form__button" type="submit">Оставить заявку</button>
+                <p class="form-note">Точная стоимость рассчитывается после замера. На цену влияют площадь, выбранное полотно, профиль, освещение, углы, трубы, карниз и дополнительные работы.</p>
+                <a class="privacy-link" href="%BASE_URL%privacy-policy/">Политика обработки персональных данных</a>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
 
