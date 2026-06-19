@@ -31,9 +31,7 @@ export function initRooms() {
       const detailsStyles = getComputedStyle(details);
       const verticalChrome =
         (parseFloat(itemStyles.paddingTop) || 0) +
-        (parseFloat(itemStyles.paddingBottom) || 0) +
-        (parseFloat(itemStyles.borderTopWidth) || 0) +
-        (parseFloat(itemStyles.borderBottomWidth) || 0);
+        (parseFloat(itemStyles.paddingBottom) || 0);
       const detailsGap = parseFloat(detailsStyles.marginTop) || 0;
       const collapsedHeight = heading.offsetHeight + verticalChrome;
       const expandedHeight = collapsedHeight + detailsGap + inner.scrollHeight;
