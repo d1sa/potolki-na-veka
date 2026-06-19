@@ -179,13 +179,13 @@
                 <a class="hero-works-preview" href="%BASE_URL%raboty/" data-hero-works aria-label="Смотреть наши работы">
                   <div class="hero-works-photos" aria-hidden="true">
                     <span class="hero-work-photo hero-work-photo-led">
-                      <img src="assets/images/lighting-led.jpg" alt="">
+                      <img src="assets/images/hero-work-led-figma.jpg" alt="">
                     </span>
                     <span class="hero-work-photo hero-work-photo-gx53">
-                      <img src="assets/images/lighting-gx53.jpg" alt="">
+                      <img src="assets/images/hero-work-gx53-figma.jpg" alt="">
                     </span>
                     <span class="hero-work-photo hero-work-photo-chandelier">
-                      <img src="assets/images/lighting-chandelier.jpg" alt="">
+                      <img src="assets/images/hero-work-chandelier-figma.jpg" alt="">
                     </span>
                   </div>
                   <span class="hero-works-link button button-glass button-oval-arrow">
@@ -198,7 +198,7 @@
                     <p class="hero-location">Калуга и Калужская область</p>
                     <h1>Установка натяжных потолков в Калуге под ключ</h1>
                   </div>
-                  <p class="eyebrow">Аккуратный монтаж — спокойствие после ремонта</p>
+                  <p class="hero-subtitle">Аккуратный монтаж — спокойствие после ремонта</p>
                 </div>
                 <div class="hero-action-group">
                   <div class="hero-actions">
@@ -213,11 +213,13 @@
               </div>
 
               <form class="hero-aside-form reveal" action="#" method="post">
-                <img class="hero-aside-form__photo" src="assets/images/hero.jpg" alt="Современная гостиная с натяжным потолком и встроенным освещением">
-                <span class="hero-aside-form__overlay" aria-hidden="true"></span>
+                <picture class="hero-aside-form__photo" aria-hidden="true">
+                  <source srcset="assets/images/hero-aside-form-photo-mobile.png" media="(max-width: 700px)">
+                  <img src="assets/images/hero-aside-form-photo.png" alt="">
+                </picture>
                 <div class="hero-aside-form__title">
                   <span class="hero-aside-form__badge">
-                    <span class="hero-aside-form__badge-icon" aria-hidden="true"></span>
+                    <img class="hero-aside-form__badge-icon" src="assets/icons/hero-badge-check-circle.svg" alt="" width="24" height="24" aria-hidden="true">
                     Замерщик бесплатно
                   </span>
                   <p>Поможем выбрать натяжные потолки для квартиры, дома или офиса</p>
@@ -228,9 +230,10 @@
                       <span class="sr-only">Ваше имя</span>
                       <input type="text" name="hero-name" autocomplete="name" placeholder="Ваше имя">
                     </label>
-                    <label>
+                    <label class="hero-phone-field">
                       <span class="sr-only">Телефон</span>
-                      <input type="tel" name="hero-phone" autocomplete="tel" placeholder="+7">
+                      <span class="hero-phone-field__prefix" aria-hidden="true">+7</span>
+                      <input type="tel" name="hero-phone" autocomplete="tel" inputmode="tel">
                     </label>
                   </div>
                   <button class="button hero-aside-form__button" type="submit">Отправить</button>
@@ -241,12 +244,12 @@
 
             <div class="hero-benefits reveal">
               <ul class="hero-badges" aria-label="Преимущества">
-                <li><span class="hero-badge-icon hero-badge-icon--measure" aria-hidden="true"></span><span>Бесплатный замер по Калуге</span></li>
-                <li><span class="hero-badge-icon hero-badge-icon--canvas" aria-hidden="true"></span><span>ПВХ и тканевые полотна</span></li>
-                <li><span class="hero-badge-icon hero-badge-icon--profiles" aria-hidden="true"></span><span>Карнизы, ниши, теневые и парящие решения</span></li>
-                <li><span class="hero-badge-icon hero-badge-icon--install" aria-hidden="true"></span><span>Монтаж натяжных потолков под ключ</span></li>
-                <li><span class="hero-badge-icon hero-badge-icon--lighting" aria-hidden="true"></span><span>Светильники, люстры, LED-лента и трековый свет</span></li>
-                <li><span class="hero-badge-icon hero-badge-icon--warranty" aria-hidden="true"></span><span>Гарантийные условия фиксируются в договоре</span></li>
+                <li><span class="hero-badge-icon" aria-hidden="true"><img src="assets/images/hero-benefit-measure.jpg" alt=""></span><span>Бесплатный замер по Калуге</span></li>
+                <li><span class="hero-badge-icon" aria-hidden="true"><img src="assets/images/hero-benefit-canvas.jpg" alt=""></span><span>ПВХ и тканевые полотна</span></li>
+                <li><span class="hero-badge-icon" aria-hidden="true"><img src="assets/images/hero-benefit-profiles.jpg" alt=""></span><span>Карнизы, ниши, теневые и парящие решения</span></li>
+                <li><span class="hero-badge-icon" aria-hidden="true"><img src="assets/images/hero-benefit-install.jpg" alt=""></span><span>Монтаж натяжных потолков под ключ</span></li>
+                <li><span class="hero-badge-icon" aria-hidden="true"><img src="assets/images/hero-benefit-lighting.jpg" alt=""></span><span>Светильники, люстры, LED-лента и трековый свет</span></li>
+                <li><span class="hero-badge-icon" aria-hidden="true"><img src="assets/images/hero-benefit-warranty.jpg" alt=""></span><span>Гарантийные условия фиксируются в договоре</span></li>
               </ul>
             </div>
             <div class="hero-description-grid reveal">

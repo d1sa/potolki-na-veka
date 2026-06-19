@@ -1,13 +1,14 @@
 .hero {
   padding: 0;
   background: var(--bg);
+  overflow-x: clip;
 }
 
 .hero.section-card-layout {
   padding: 0 32px 12px;
 }
 
-.hero-card {
+.hero .hero-card {
   max-width: 1660px;
   padding: 0;
   overflow: visible;

@@ -9,11 +9,11 @@
   --text-rgb: 16, 24, 40;
   --muted: #4b4f57;
   --muted-deep: #3e4757;
-  --accent: #155dfc;
-  --accent-rgb: 21, 93, 252;
-  --accent-dark: #155dfc;
-  --accent-hover: #0f4ee8;
-  --accent-progress: #2b7fff;
+  --accent: #268ceb;
+  --accent-rgb: 38, 140, 235;
+  --accent-dark: #268ceb;
+  --accent-hover: #1f7ed7;
+  --accent-progress: #268ceb;
   --graphite: #101828;
   --icon-contrast-bg: #1d2a44;
   --badge-bg: #ebf0f5;
@@ -26,7 +26,7 @@
   --line-neutral: rgba(0, 0, 0, 0.1);
   --line-control: #d4d8e0;
   --accent-line-soft: rgba(var(--accent-rgb), 0.35);
-  --topbar-accent: #268ceb;
+  --topbar-accent: var(--accent);
   --topbar-accent-rgb: 38, 140, 235;
   --topbar-hover-bg: #f2f5fa;
   --topbar-border: #eaedf2;
@@ -44,7 +44,9 @@
   --shadow-soft-card: 0 4px 12px rgba(0, 0, 0, 0.06);
   --shadow-control: 0 2px 4px rgba(0, 0, 0, 0.06);
   --shadow-form-field: 0 4px 8px rgba(0, 0, 0, 0.08);
+  --shadow-form-field-clear: 0 4px 8px rgba(0, 0, 0, 0);
   --shadow-topbar: 0 10px 40px rgba(0, 0, 0, 0.06);
+  --transition-input: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease, color 0.18s ease;
   --radius: 16px;
   --section-card-radius: 60px;
   --card-large-radius: 40px;

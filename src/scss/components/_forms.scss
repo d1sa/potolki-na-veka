@@ -13,6 +13,17 @@
   border: 0;
 }
 
+input,
+textarea,
+select {
+  transition: var(--transition-input);
+}
+
+input::placeholder,
+textarea::placeholder {
+  transition: color 0.18s ease;
+}
+
 .lead-form {
   display: grid;
   gap: 16px;
@@ -82,7 +93,7 @@
 .dropdown-trigger:focus,
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid rgba(var(--accent-rgb), 0.24);
+  outline: 3px solid rgba(var(--accent-rgb), 0.2);
   outline-offset: 2px;
 }
 
