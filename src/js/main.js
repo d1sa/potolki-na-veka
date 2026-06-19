@@ -6,6 +6,7 @@ import { initMobileMenu } from "./components/mobile-menu.js";
 import { initReveal } from "./components/reveal.js";
 import { initRooms } from "./components/rooms.js";
 import { initServicesDropdown } from "./components/services-dropdown.js";
+import { initTimelineCarousel } from "./components/timeline-carousel.js";
 
 const mobileMenu = initMobileMenu();
 const servicesDropdown = initServicesDropdown();
@@ -14,6 +15,7 @@ const heroWorksPreview = initHeroWorksPreview();
 initHeader();
 initFaq();
 initMaterialsCarousel();
+initTimelineCarousel();
 initRooms();
 initReveal();
 

@@ -389,7 +389,9 @@
                   <img src="assets/images/process-measure.jpg" alt="Замер помещения перед установкой натяжного потолка">
                   <span class="process-step process-step--with-icon">
                     <span class="process-step__number">1</span>
-                    <span class="process-step__icon process-step__icon--flag" aria-hidden="true"></span>
+                    <span class="process-step__icon process-step__icon--flag" aria-hidden="true">
+                      <img src="assets/icons/flag-fill.svg" alt="">
+                    </span>
                   </span>
                 </div>
                 <div class="process-card__body">
@@ -450,7 +452,9 @@
                   <img src="assets/images/process-install.jpg" alt="Монтаж натяжного потолка в квартире">
                   <span class="process-step process-step--with-icon">
                     <span class="process-step__number">6</span>
-                    <span class="process-step__icon process-step__icon--crown" aria-hidden="true"></span>
+                    <span class="process-step__icon process-step__icon--crown" aria-hidden="true">
+                      <img src="assets/icons/crown-fill.svg" alt="">
+                    </span>
                   </span>
                 </div>
                 <div class="process-card__body">
@@ -462,7 +466,9 @@
             <div class="section-action process-action reveal">
               <a class="button button-xl process-cta" href="%BASE_URL%#zayavka">
                 <span>Оставить заявку на подбор потолка</span>
-                <span class="process-cta__icon" aria-hidden="true"></span>
+                <span class="process-cta__icon" aria-hidden="true">
+                  <img src="assets/icons/phone-call-fill.svg" alt="">
+                </span>
               </a>
             </div>
           </div>
@@ -471,7 +477,7 @@
 
       <section class="section-card-layout application-section" id="zayavka" aria-labelledby="application-title">
         <div class="section-card section-card--soft section-card--image-bg application-card">
-          <img class="section-card__background application-card__background" src="assets/images/application-background.png" alt="" aria-hidden="true">
+          <img class="section-card__background application-card__background" src="assets/images/application-background-figma.png" alt="" aria-hidden="true">
           <div class="section-card__content application-content">
             <div class="application-layout">
               <div class="application-copy reveal">
@@ -505,12 +511,12 @@
                 <fieldset>
                   <legend>Что нужно сделать?</legend>
                   <div class="choice-grid">
-                    <label><input type="radio" name="task" value="Потолок в одной комнате" checked> <span>Потолок в одной комнате</span></label>
-                    <label><input type="radio" name="task" value="Потолки во всей квартире"> <span>Потолки во всей квартире</span></label>
-                    <label><input type="radio" name="task" value="Потолок со встроенным освещением"> <span>Потолок со встроенным освещением</span></label>
-                    <label><input type="radio" name="task" value="Потолок с люстрой"> <span>Потолок с люстрой</span></label>
-                    <label><input type="radio" name="task" value="Ниша под карниз"> <span>Ниша под карниз</span></label>
-                    <label><input type="radio" name="task" value="Нужна консультация"> <span>Нужна консультация</span></label>
+                    <label><input type="checkbox" name="task[]" value="Потолок в одной комнате" checked> <span>Потолок в одной комнате</span></label>
+                    <label><input type="checkbox" name="task[]" value="Потолки во всей квартире"> <span>Потолки во всей квартире</span></label>
+                    <label><input type="checkbox" name="task[]" value="Потолок со встроенным освещением"> <span>Потолок со встроенным освещением</span></label>
+                    <label><input type="checkbox" name="task[]" value="Потолок с люстрой"> <span>Потолок с люстрой</span></label>
+                    <label><input type="checkbox" name="task[]" value="Ниша под карниз"> <span>Ниша под карниз</span></label>
+                    <label><input type="checkbox" name="task[]" value="Нужна консультация"> <span>Нужна консультация</span></label>
                   </div>
                 </fieldset>
                 <button class="button button-xl application-form__button" type="submit">Оставить заявку</button>
@@ -774,7 +780,8 @@
       </section>
 
       <section class="section-card-layout details-section" aria-labelledby="details-title">
-        <div class="section-card details-card">
+        <div class="section-card section-card--image-bg details-card">
+          <img class="section-card__background details-card__background" src="assets/images/details-background-figma.png" alt="" aria-hidden="true">
           <div class="section-card__content details-content">
             <div class="details-header reveal">
               <span class="section-kicker">Детали</span>
@@ -931,67 +938,150 @@
         </div>
       </section>
 
-      <section class="section price-section">
-        <div class="container price-layout">
-          <div class="section-header price-copy reveal">
-            <span class="section-kicker">Цены</span>
-            <h2>Ориентировочные цены на натяжные потолки</h2>
-            <p>Указанные цены помогают понять примерный порядок стоимости. Итоговый расчёт зависит от площади помещения, выбранного полотна, профиля, освещения, количества углов, труб, карниза и дополнительных работ.</p>
-            <div class="price-note">
-              <span aria-hidden="true">i</span>
-              <p>Точный расчёт подготовим после замера и подбора материалов.</p>
-            </div>
-            <div class="price-actions">
-              <a class="button" href="%BASE_URL%ceny/">Смотреть цены</a>
-              <a class="button button-secondary" href="%BASE_URL%#zayavka">Оставить заявку на расчёт</a>
-            </div>
-          </div>
-          <div class="price-list-card reveal" aria-label="Ориентировочные цены">
-            <div class="price-group">
-              <h3>Полотна</h3>
-              <div class="price-row"><span>ПВХ-полотно</span><strong>от ___ ₽/м²</strong></div>
-              <div class="price-row"><span>Тканевое полотно</span><strong>от ___ ₽/м²</strong></div>
-              <div class="price-row"><span>Потолок с фотопечатью</span><strong>от ___ ₽/м²</strong></div>
-            </div>
-            <div class="price-group">
-              <h3>Профили</h3>
-              <div class="price-row"><span>ПВХ-профиль</span><strong>от 120 ₽/п.м.</strong></div>
-              <div class="price-row"><span>Алюминиевый профиль</span><strong>от 155 ₽/п.м.</strong></div>
-              <div class="price-row"><span>Парящий профиль</span><strong>от 900 ₽/п.м.</strong></div>
-              <div class="price-row"><span>Теневой профиль</span><strong>от 900 ₽/п.м.</strong></div>
-            </div>
-            <div class="price-group">
-              <h3>Освещение</h3>
-              <div class="price-row"><span>Конструкция под светильник</span><strong>от 330 ₽/шт.</strong></div>
-              <div class="price-row"><span>Конструкция под люстру</span><strong>от 350 ₽/шт.</strong></div>
-              <div class="price-row"><span>LED-лента</span><strong>от 600 ₽/п.м.</strong></div>
-            </div>
-            <div class="price-group">
-              <h3>Дополнительно</h3>
-              <div class="price-row"><span>Обход трубы</span><strong>от 270 ₽/шт.</strong></div>
-              <div class="price-row"><span>Дополнительный угол</span><strong>от 90 ₽/шт.</strong></div>
+      <section class="section-card-layout price-section" aria-labelledby="price-title">
+        <div class="section-card price-card">
+          <div class="section-card__content price-content">
+            <div class="price-layout">
+              <div class="price-copy reveal">
+                <span class="section-kicker">Цены</span>
+                <h2 id="price-title">Ориентировочные цены на натяжные потолки</h2>
+                <p>Указанные цены помогают понять примерный порядок стоимости. Итоговый расчёт зависит от площади помещения, выбранного полотна, профиля, освещения, количества углов, труб, карниза и дополнительных работ.</p>
+                <div class="price-note">
+                  <img src="assets/icons/prices/price-plus.svg" alt="" aria-hidden="true">
+                  <p>Точный расчёт подготовим после замера и подбора материалов.</p>
+                </div>
+                <div class="price-actions">
+                  <a class="button" href="%BASE_URL%ceny/">Смотреть цены</a>
+                  <a class="button button-secondary" href="%BASE_URL%#zayavka">
+                    <span>Оставить заявку на расчёт</span>
+                    <img src="assets/icons/prices/price-phone.svg" alt="" aria-hidden="true">
+                  </a>
+                </div>
+              </div>
+              <div class="price-list-card reveal" aria-label="Ориентировочные цены">
+                <div class="price-group">
+                  <div class="price-group__header">
+                    <h3>Полотна</h3>
+                    <span class="price-group__icon" aria-hidden="true">
+                      <img src="assets/images/prices/price-canvas.jpg" alt="">
+                    </span>
+                  </div>
+                  <div class="price-row"><span>ПВХ-полотно</span><strong>от ___ ₽/м²</strong></div>
+                  <div class="price-row"><span>Тканевое полотно</span><strong>от ___ ₽/м²</strong></div>
+                  <div class="price-row"><span>Потолок с фотопечатью</span><strong>от ___ ₽/м²</strong></div>
+                </div>
+                <div class="price-group">
+                  <div class="price-group__header">
+                    <h3>Профили</h3>
+                    <span class="price-group__icon" aria-hidden="true">
+                      <img src="assets/images/prices/price-profiles.jpg" alt="">
+                    </span>
+                  </div>
+                  <div class="price-row"><span>ПВХ-профиль</span><strong>от 120 ₽/п.м.</strong></div>
+                  <div class="price-row"><span>Алюминиевый профиль</span><strong>от 155 ₽/п.м.</strong></div>
+                  <div class="price-row"><span>Парящий профиль</span><strong>от 900 ₽/п.м.</strong></div>
+                  <div class="price-row"><span>Теневой профиль</span><strong>от 900 ₽/п.м.</strong></div>
+                </div>
+                <div class="price-group">
+                  <div class="price-group__header">
+                    <h3>Освещение</h3>
+                    <span class="price-group__icon" aria-hidden="true">
+                      <img src="assets/images/prices/price-lighting.jpg" alt="">
+                    </span>
+                  </div>
+                  <div class="price-row"><span>Конструкция под светильник</span><strong>от 330 ₽/шт.</strong></div>
+                  <div class="price-row"><span>Конструкция под люстру</span><strong>от 350 ₽/шт.</strong></div>
+                  <div class="price-row"><span>LED-лента</span><strong>от 600 ₽/п.м.</strong></div>
+                </div>
+                <div class="price-group">
+                  <div class="price-group__header">
+                    <h3>Дополнительно</h3>
+                    <span class="price-group__icon" aria-hidden="true">
+                      <img src="assets/images/prices/price-extra.jpg" alt="">
+                    </span>
+                  </div>
+                  <div class="price-row"><span>Обход трубы</span><strong>от 270 ₽/шт.</strong></div>
+                  <div class="price-row"><span>Дополнительный угол</span><strong>от 90 ₽/шт.</strong></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-header reveal">
-            <span class="section-kicker">Этапы</span>
-            <h2>От заявки до готового потолка — 7 понятных шагов</h2>
-          </div>
-          <ol class="timeline">
-            <li class="reveal"><a href="%BASE_URL%#zayavka"><span>1</span><h3>Заявка</h3><p>Вы оставляете номер телефона или звоните нам.</p></a></li>
-            <li class="reveal"><span>2</span><h3>Консультация</h3><p>Уточняем помещение, площадь, пожелания по полотну, освещению, карнизу и дополнительным работам.</p></li>
-            <li class="reveal"><span>3</span><h3>Замер</h3><p>Приезжаем на объект, снимаем размеры, смотрим углы, трубы, стены, высоту и особенности помещения.</p></li>
-            <li class="reveal"><span>4</span><h3>Расчёт</h3><p>Подбираем полотно, профиль, освещение и дополнительные элементы, после чего считаем стоимость работ.</p></li>
-            <li class="reveal"><span>5</span><h3>Договор</h3><p>Фиксируем выбранные материалы, объём работ, стоимость, сроки и гарантийные условия в договоре.</p></li>
-            <li class="reveal"><span>6</span><h3>Монтаж</h3><p>Устанавливаем профиль, полотно, закладные, светильники и дополнительные элементы.</p></li>
-            <li class="reveal"><span>7</span><h3>Готовый результат</h3><p>Вы принимаете работу и получаете аккуратный потолок, подобранный под помещение, ремонт и бюджет.</p></li>
-          </ol>
-          <div class="section-action reveal">
-            <a class="button button-secondary" href="%BASE_URL%#zayavka">Оставить заявку на замер</a>
+      <section class="section-card-layout timeline-section" aria-labelledby="timeline-title">
+        <div class="section-card">
+          <div class="section-card__content timeline-content">
+            <div class="timeline-title reveal">
+              <span class="section-kicker">Этапы</span>
+              <h2 id="timeline-title">7 понятных шагов — от заявки до готового потолка</h2>
+            </div>
+            <div class="timeline-carousel reveal" data-timeline-carousel>
+              <div class="timeline-carousel__controls" aria-label="Навигация по этапам работы">
+                <button class="timeline-carousel__button timeline-carousel__button--prev" type="button" aria-label="Предыдущие этапы" data-timeline-prev></button>
+                <button class="timeline-carousel__button" type="button" aria-label="Следующие этапы" data-timeline-next></button>
+              </div>
+              <blossom-carousel class="timeline-carousel__track" aria-label="Этапы работы">
+                <article class="timeline-step">
+                  <div class="timeline-step__header">
+                    <span class="timeline-step__number">1</span>
+                    <span class="timeline-step__line" aria-hidden="true"></span>
+                  </div>
+                  <h3>Заявка</h3>
+                  <p>Вы оставляете номер телефона или звоните нам.</p>
+                </article>
+                <article class="timeline-step">
+                  <div class="timeline-step__header">
+                    <span class="timeline-step__number">2</span>
+                    <span class="timeline-step__line" aria-hidden="true"></span>
+                  </div>
+                  <h3>Консультация</h3>
+                  <p>Уточняем помещение, площадь, пожелания по полотну, освещению, карнизу и дополнительным работам.</p>
+                </article>
+                <article class="timeline-step">
+                  <div class="timeline-step__header">
+                    <span class="timeline-step__number">3</span>
+                    <span class="timeline-step__line" aria-hidden="true"></span>
+                  </div>
+                  <h3>Замер</h3>
+                  <p>Приезжаем на объект, снимаем размеры, смотрим углы, трубы, стены, высоту и особенности помещения.</p>
+                </article>
+                <article class="timeline-step">
+                  <div class="timeline-step__header">
+                    <span class="timeline-step__number">4</span>
+                    <span class="timeline-step__line" aria-hidden="true"></span>
+                  </div>
+                  <h3>Расчёт</h3>
+                  <p>Подбираем полотно, профиль, освещение и дополнительные элементы, после чего считаем стоимость работ.</p>
+                </article>
+                <article class="timeline-step">
+                  <div class="timeline-step__header">
+                    <span class="timeline-step__number">5</span>
+                    <span class="timeline-step__line" aria-hidden="true"></span>
+                  </div>
+                  <h3>Договор</h3>
+                  <p>Фиксируем выбранные материалы, объём работ, стоимость, сроки и гарантийные условия в договоре.</p>
+                </article>
+                <article class="timeline-step">
+                  <div class="timeline-step__header">
+                    <span class="timeline-step__number">6</span>
+                    <span class="timeline-step__line" aria-hidden="true"></span>
+                  </div>
+                  <h3>Монтаж</h3>
+                  <p>Устанавливаем профиль, полотно, закладные, светильники и дополнительные элементы.</p>
+                </article>
+                <article class="timeline-step">
+                  <div class="timeline-step__stack">
+                    <span class="timeline-step__number">7</span>
+                    <span class="timeline-step__icon" aria-hidden="true">
+                      <img src="assets/icons/crown-fill.svg" alt="">
+                    </span>
+                  </div>
+                  <h3>Готовый результат</h3>
+                  <p>Вы принимаете работу и получаете аккуратный потолок, подобранный под помещение, ремонт и бюджет.</p>
+                </article>
+              </blossom-carousel>
+            </div>
           </div>
         </div>
       </section>
@@ -1004,13 +1094,13 @@
             <p>Направление «Потолки на века» новое, поэтому раздел с реальными примерами будет постепенно пополняться объектами в Калуге. На замере можно посмотреть варианты полотен, профилей, освещения и готовых решений.</p>
           </div>
           <div class="gallery-grid">
-            <a class="gallery-card tall reveal" href="%BASE_URL%raboty/potolki-v-zale/"><img src="assets/images/gallery-living.jpg" alt="Пример визуального оформления потолка в зале"><span>пример визуального оформления</span><h3>Потолки в зале</h3></a>
-            <a class="gallery-card reveal" href="%BASE_URL%raboty/potolki-na-kuhne/"><img src="assets/images/gallery-kitchen.jpg" alt="Пример визуального оформления потолка на кухне"><span>пример визуального оформления</span><h3>Потолки на кухне</h3></a>
-            <a class="gallery-card reveal" href="%BASE_URL%raboty/potolki-v-vannoj/"><img src="assets/images/gallery-bathroom.jpg" alt="Пример визуального оформления потолка в ванной"><span>пример визуального оформления</span><h3>Потолки в ванной</h3></a>
-            <a class="gallery-card tall reveal" href="%BASE_URL%raboty/potolki-so-svetom/"><img src="assets/images/gallery-lighting.jpg" alt="Пример визуального оформления потолка с освещением"><span>пример визуального оформления</span><h3>Потолки с освещением</h3></a>
-            <a class="gallery-card reveal" href="%BASE_URL%raboty/nishi-pod-karniz/"><img src="assets/images/gallery-niche.jpg" alt="Пример визуального оформления ниши под карниз"><span>пример визуального оформления</span><h3>Ниши под карниз</h3></a>
-            <a class="gallery-card reveal" href="%BASE_URL%raboty/tenevye-potolki/"><img src="assets/images/gallery-shadow.jpg" alt="Пример визуального оформления теневого потолка"><span>пример визуального оформления</span><h3>Теневые потолки</h3></a>
-            <a class="gallery-card reveal" href="%BASE_URL%raboty/paryashchie-potolki/"><img src="assets/images/gallery-floating.jpg" alt="Пример визуального оформления парящего потолка"><span>пример визуального оформления</span><h3>Парящие потолки</h3></a>
+            <a class="gallery-card tall reveal" href="%BASE_URL%raboty/potolki-v-zale/"><img src="assets/images/gallery-living.jpg" alt="Пример визуального оформления потолка в зале"><h3>Потолки в зале</h3></a>
+            <a class="gallery-card reveal" href="%BASE_URL%raboty/potolki-na-kuhne/"><img src="assets/images/gallery-kitchen.jpg" alt="Пример визуального оформления потолка на кухне"><h3>Потолки на кухне</h3></a>
+            <a class="gallery-card reveal" href="%BASE_URL%raboty/potolki-v-vannoj/"><img src="assets/images/gallery-bathroom.jpg" alt="Пример визуального оформления потолка в ванной"><h3>Потолки в ванной</h3></a>
+            <a class="gallery-card tall reveal" href="%BASE_URL%raboty/potolki-so-svetom/"><img src="assets/images/gallery-lighting.jpg" alt="Пример визуального оформления потолка с освещением"><h3>Потолки с освещением</h3></a>
+            <a class="gallery-card reveal" href="%BASE_URL%raboty/nishi-pod-karniz/"><img src="assets/images/gallery-niche.jpg" alt="Пример визуального оформления ниши под карниз"><h3>Ниши под карниз</h3></a>
+            <a class="gallery-card reveal" href="%BASE_URL%raboty/tenevye-potolki/"><img src="assets/images/gallery-shadow.jpg" alt="Пример визуального оформления теневого потолка"><h3>Теневые потолки</h3></a>
+            <a class="gallery-card reveal" href="%BASE_URL%raboty/paryashchie-potolki/"><img src="assets/images/gallery-floating.jpg" alt="Пример визуального оформления парящего потолка"><h3>Парящие потолки</h3></a>
           </div>
           <div class="section-action reveal">
             <a class="button button-secondary" href="%BASE_URL%raboty/">Смотреть работы</a>
@@ -1018,99 +1108,143 @@
         </div>
       </section>
 
-      <section class="section faq-section">
-        <div class="container">
-          <div class="section-header reveal">
-            <span class="section-kicker">FAQ</span>
-            <h2>Частые вопросы</h2>
-          </div>
-          <div class="faq-list reveal">
-            <article class="faq-item">
-              <button type="button" aria-expanded="false">Можно ли установить натяжной потолок в уже готовом ремонте?<span>+</span></button>
-              <div class="faq-panel"><p>Да, в большинстве случаев натяжной потолок можно установить в уже готовом помещении. Перед работами важно обсудить мебель, доступ к стенам, освещение и особенности комнаты.</p><a href="%BASE_URL%uslugi/">/uslugi/</a></div>
-            </article>
-            <article class="faq-item">
-              <button type="button" aria-expanded="false">Какой потолок лучше выбрать для ванной?<span>+</span></button>
-              <div class="faq-panel"><p>Для ванной чаще выбирают ПВХ-полотно. Оно подходит для влажных помещений и помогает получить ровную аккуратную поверхность.</p><a href="%BASE_URL%uslugi/pomeshcheniya/vannaya/">/uslugi/pomeshcheniya/vannaya/</a></div>
-            </article>
-            <article class="faq-item">
-              <button type="button" aria-expanded="false">Можно ли установить светильники в натяжной потолок?<span>+</span></button>
-              <div class="faq-panel"><p>Да. Можно установить светильники GX53, люстру, LED-ленту, трековые или линейные светильники. Освещение лучше продумать до монтажа.</p><a href="%BASE_URL%uslugi/osveshchenie/">/uslugi/osveshchenie/</a></div>
-            </article>
-            <article class="faq-item">
-              <button type="button" aria-expanded="false">Можно ли сделать нишу под карниз?<span>+</span></button>
-              <div class="faq-panel"><p>Да. Можно сделать скрытую нишу под карниз или более доступное решение с закладным брусом.</p><a href="%BASE_URL%uslugi/karnizy/">/uslugi/karnizy/</a></div>
-            </article>
-            <article class="faq-item">
-              <button type="button" aria-expanded="false">Вы даёте гарантию?<span>+</span></button>
-              <div class="faq-panel"><p>Да, гарантийные условия на материалы и монтаж фиксируются в договоре.</p><a href="%BASE_URL%kontakty/">/kontakty/</a></div>
-            </article>
-            <article class="faq-item">
-              <button type="button" aria-expanded="false">Когда будет понятна точная цена?<span>+</span></button>
-              <div class="faq-panel"><p>Точная цена рассчитывается после замера. На стоимость влияют площадь, материал, профиль, светильники, карниз, углы, трубы и дополнительные работы.</p><a href="%BASE_URL%ceny/">/ceny/</a></div>
-            </article>
-            <article class="faq-item">
-              <button type="button" aria-expanded="false">Можно ли рассчитать потолки во всей квартире?<span>+</span></button>
-              <div class="faq-panel"><p>Да. Можно рассчитать потолки сразу для всей квартиры, подобрать разные решения по комнатам и заранее продумать освещение.</p><a href="%BASE_URL%uslugi/pomeshcheniya/">/uslugi/pomeshcheniya/</a></div>
-            </article>
+      <section class="section-card-layout faq-section" aria-labelledby="faq-title">
+        <div class="section-card faq-card">
+          <div class="section-card__content faq-content">
+            <div class="faq-title reveal">
+              <span class="section-kicker">FAQ</span>
+              <h2 id="faq-title">Частые вопросы</h2>
+            </div>
+            <div class="faq-list reveal">
+              <article class="faq-item is-open">
+                <button class="faq-button" type="button" aria-expanded="true" aria-controls="faq-panel-1">
+                  <span class="faq-question">Можно ли установить натяжной потолок в уже готовом ремонте?</span>
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+                <div class="faq-panel" id="faq-panel-1"><p>Да, в большинстве случаев натяжной потолок можно установить в уже готовом помещении. Перед работами важно обсудить мебель, доступ к стенам, освещение и особенности комнаты.</p></div>
+              </article>
+              <article class="faq-item">
+                <button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-panel-2">
+                  <span class="faq-question">Какой потолок лучше выбрать для ванной?</span>
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+                <div class="faq-panel" id="faq-panel-2"><p>Для ванной чаще выбирают ПВХ-полотно. Оно подходит для влажных помещений и помогает получить ровную аккуратную поверхность.</p></div>
+              </article>
+              <article class="faq-item">
+                <button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-panel-3">
+                  <span class="faq-question">Можно ли установить светильники в натяжной потолок?</span>
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+                <div class="faq-panel" id="faq-panel-3"><p>Да. Можно установить светильники GX53, люстру, LED-ленту, трековые или линейные светильники. Освещение лучше продумать до монтажа.</p></div>
+              </article>
+              <article class="faq-item">
+                <button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-panel-4">
+                  <span class="faq-question">Можно ли сделать нишу под карниз?</span>
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+                <div class="faq-panel" id="faq-panel-4"><p>Да. Можно сделать скрытую нишу под карниз или более доступное решение с закладным брусом.</p></div>
+              </article>
+              <article class="faq-item">
+                <button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-panel-5">
+                  <span class="faq-question">Вы даёте гарантию?</span>
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+                <div class="faq-panel" id="faq-panel-5"><p>Да, гарантийные условия на материалы и монтаж фиксируются в договоре.</p></div>
+              </article>
+              <article class="faq-item">
+                <button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-panel-6">
+                  <span class="faq-question">Когда будет понятна точная цена?</span>
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+                <div class="faq-panel" id="faq-panel-6"><p>Точная цена рассчитывается после замера. На стоимость влияют площадь, материал, профиль, светильники, карниз, углы, трубы и дополнительные работы.</p></div>
+              </article>
+              <article class="faq-item">
+                <button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-panel-7">
+                  <span class="faq-question">Можно ли рассчитать потолки во всей квартире?</span>
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+                <div class="faq-panel" id="faq-panel-7"><p>Да. Можно рассчитать потолки сразу для всей квартиры, подобрать разные решения по комнатам и заранее продумать освещение.</p></div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section final-cta">
-        <div class="container final-cta-inner reveal">
-          <h2>Готовы обсудить ваш будущий потолок?</h2>
-          <p>Вы уже посмотрели основные варианты потолков, освещения, профилей, карнизов и цен. Оставьте заявку — подскажем подходящее решение и договоримся о замере по Калуге.</p>
-          <div class="dual-actions">
-            <a class="button" href="%BASE_URL%#zayavka">Оставить заявку на подбор потолка</a>
-            <a class="button button-secondary" href="tel:+79000000000">Позвонить: +7 (900) 000-00-00</a>
+      <section class="section-card-layout final-cta" aria-labelledby="final-cta-title">
+        <div class="section-card section-card--soft final-cta-card">
+          <div class="section-card__content final-cta-content reveal">
+            <div class="final-cta-title">
+              <h2 id="final-cta-title">Готовы обсудить ваш будущий потолок?</h2>
+              <p>Вы уже посмотрели основные варианты потолков, освещения, профилей, карнизов и цен. Оставьте заявку — подскажем подходящее решение и договоримся о замере по Калуге.</p>
+            </div>
+            <div class="final-cta-actions">
+              <a class="button button-xl" href="%BASE_URL%#zayavka">Оставить заявку на подбор потолка</a>
+              <a class="button button-xl final-cta-phone" href="tel:+74842230015">
+                <span>+7 (4842) 23-00-15</span>
+                <img src="assets/icons/phone-call-fill.svg" alt="" width="24" height="24" aria-hidden="true">
+              </a>
+            </div>
+            <p class="final-cta-note">
+              <span class="final-cta-note__icon" aria-hidden="true">
+                <img src="assets/icons/hero-badge-check-circle.svg" alt="" width="24" height="24">
+              </span>
+              <span>Бесплатный замер по Калуге</span>
+            </p>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <a class="brand" href="%BASE_URL%">
-            <span class="brand-name">Потолки на века</span>
-            <span class="brand-subtitle">Натяжные потолки в Калуге</span>
-          </a>
-          <p>Установка натяжных потолков в Калуге под ключ: замер, подбор полотна, профиля, освещения, карнизов, ниш и монтаж.</p>
-        </div>
-        <nav class="footer-col" aria-label="Основные разделы">
-          <h3>Разделы</h3>
-          <a href="%BASE_URL%uslugi/">Услуги</a>
-          <a href="%BASE_URL%ceny/">Цены</a>
-          <a href="%BASE_URL%raboty/">Наши работы</a>
-          <a href="%BASE_URL%kontakty/">Контакты</a>
-        </nav>
-        <nav class="footer-col" aria-label="Каталог услуг">
-          <h3>Каталог услуг</h3>
-          <a href="%BASE_URL%uslugi/vidy-potolkov/">Виды потолков</a>
-          <a href="%BASE_URL%uslugi/pomeshcheniya/">Потолки по помещениям</a>
-          <a href="%BASE_URL%uslugi/resheniya/">Популярные решения</a>
-          <a href="%BASE_URL%uslugi/osveshchenie/">Освещение</a>
-          <a href="%BASE_URL%uslugi/karnizy/">Карнизы и ниши</a>
-          <a href="%BASE_URL%uslugi/profili/">Профили</a>
-        </nav>
-        <nav class="footer-col" aria-label="Популярные страницы">
-          <h3>Популярные страницы</h3>
-          <a href="%BASE_URL%uslugi/vidy-potolkov/matovye/">Матовые потолки</a>
-          <a href="%BASE_URL%uslugi/vidy-potolkov/pvh/">ПВХ потолки</a>
-          <a href="%BASE_URL%uslugi/pomeshcheniya/kuhnya/">Потолки на кухню</a>
-          <a href="%BASE_URL%uslugi/pomeshcheniya/vannaya/">Потолки в ванную</a>
-          <a href="%BASE_URL%uslugi/resheniya/potolok-so-svetom/">Потолки со встроенным освещением</a>
-          <a href="%BASE_URL%uslugi/karnizy/skrytaya-nisha/">Скрытая ниша под карниз</a>
-          <a href="%BASE_URL%uslugi/resheniya/tenevoj-potolok/">Теневые потолки</a>
-          <a href="%BASE_URL%uslugi/resheniya/paryashchij-potolok/">Парящие потолки</a>
-        </nav>
-        <div class="footer-col">
-          <h3>Контакты</h3>
-          <a href="tel:+79000000000">Калуга Телефон: +7 (900) 000-00-00</a>
-          <p>Режим работы: Пн–Сб, 09:00–18:00</p>
-          <a href="%BASE_URL%privacy-policy/">Политика обработки персональных данных</a>
-          <a href="%BASE_URL%user-agreement/">Пользовательское соглашение</a>
+    <footer class="site-footer section-card-layout">
+      <div class="section-card site-footer__card">
+        <div class="section-card__content footer-grid">
+          <div class="footer-brand">
+            <a class="footer-brand__logo" href="%BASE_URL%" aria-label="Потолки на века">
+              <img src="assets/icons/topbar-logo.svg" alt="Потолки на века" width="165" height="64">
+            </a>
+            <p class="footer-brand__subtitle">Натяжные потолки в Калуге</p>
+            <p>Установка натяжных потолков в Калуге под ключ: замер, подбор полотна, профиля, освещения, карнизов, ниш и монтаж.</p>
+          </div>
+          <nav class="footer-col" aria-label="Основные разделы">
+            <h3>Разделы</h3>
+            <a href="%BASE_URL%uslugi/">Услуги</a>
+            <a href="%BASE_URL%ceny/">Цены</a>
+            <a href="%BASE_URL%raboty/">Наши работы</a>
+            <a href="%BASE_URL%kontakty/">Контакты</a>
+          </nav>
+          <nav class="footer-col" aria-label="Каталог услуг">
+            <h3>Каталог услуг</h3>
+            <a href="%BASE_URL%uslugi/vidy-potolkov/">Виды потолков</a>
+            <a href="%BASE_URL%uslugi/pomeshcheniya/">Потолки по помещениям</a>
+            <a href="%BASE_URL%uslugi/resheniya/">Популярные решения</a>
+            <a href="%BASE_URL%uslugi/osveshchenie/">Освещение</a>
+            <a href="%BASE_URL%uslugi/karnizy/">Карнизы и ниши</a>
+            <a href="%BASE_URL%uslugi/profili/">Профили</a>
+          </nav>
+          <nav class="footer-col" aria-label="Популярные страницы">
+            <h3>Популярные страницы</h3>
+            <a href="%BASE_URL%uslugi/vidy-potolkov/matovye/">Матовые потолки</a>
+            <a href="%BASE_URL%uslugi/vidy-potolkov/pvh/">ПВХ потолки</a>
+            <a href="%BASE_URL%uslugi/pomeshcheniya/kuhnya/">Потолки на кухню</a>
+            <a href="%BASE_URL%uslugi/pomeshcheniya/vannaya/">Потолки в ванную</a>
+            <a href="%BASE_URL%uslugi/resheniya/potolok-so-svetom/">Потолки со встроенным освещением</a>
+            <a href="%BASE_URL%uslugi/karnizy/skrytaya-nisha/">Скрытая ниша под карниз</a>
+            <a href="%BASE_URL%uslugi/resheniya/tenevoj-potolok/">Теневые потолки</a>
+            <a href="%BASE_URL%uslugi/resheniya/paryashchij-potolok/">Парящие потолки</a>
+          </nav>
+          <div class="footer-col">
+            <h3>Контакты</h3>
+            <p>г. Калуга, ул. Дзержинского 1/46</p>
+            <div class="footer-contact">
+              <span>Телефон:</span>
+              <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+            </div>
+            <p class="footer-meta">Режим работы: Пн–Сб, 09:00–18:00</p>
+            <div class="footer-legal">
+              <a href="%BASE_URL%privacy-policy/">Политика обработки персональных данных</a>
+              <a href="%BASE_URL%user-agreement/">Пользовательское соглашение</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

@@ -74,11 +74,14 @@ textarea::placeholder {
   height: 60px;
   min-height: 60px;
   padding: 16px;
-  border-color: var(--line-strong);
+  border-color: var(--line-control);
+  border-radius: var(--radius);
   box-shadow: var(--shadow-control);
+  caret-color: var(--topbar-accent);
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  transition: background-color 0.18s ease;
 }
 
 .lead-form--application input::placeholder {
@@ -86,8 +89,32 @@ textarea::placeholder {
   opacity: 1;
 }
 
+.lead-form--application input[type="text"]:hover,
+.lead-form--application input[type="tel"]:hover {
+  border-color: var(--line-control-hover);
+  border-radius: 12px;
+  box-shadow: var(--shadow-control-clear);
+}
+
+.lead-form--application input[type="text"]:focus,
+.lead-form--application input[type="tel"]:focus,
+.lead-form--application input[type="text"]:focus-visible,
+.lead-form--application input[type="tel"]:focus-visible {
+  border-color: var(--topbar-accent);
+  border-radius: 12px;
+  caret-color: var(--topbar-accent);
+  outline: 0;
+  box-shadow: var(--shadow-control-clear);
+}
+
+.lead-form--application input[type="text"]:hover::placeholder,
+.lead-form--application input[type="tel"]:hover::placeholder,
+.lead-form--application input[type="text"]:focus::placeholder,
+.lead-form--application input[type="tel"]:focus::placeholder {
+  color: var(--control-placeholder-active);
+}
+
 .lead-form input:focus,
-.faq-item button:focus,
 .mobile-close:focus,
 .burger:focus,
 .dropdown-trigger:focus,
@@ -148,11 +175,12 @@ legend {
   padding: 12px;
   border: 0;
   border-radius: var(--radius);
-  background: var(--control-tile-bg);
+  background-color: var(--control-tile-bg);
   color: var(--text);
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  transition: background-color 0.28s ease;
 }
 
 .lead-form--application .choice-grid input {
@@ -177,8 +205,12 @@ legend {
   box-shadow: inset 0 0 0 1px rgba(var(--accent-rgb), 0.12);
 }
 
+.lead-form--application .choice-grid label:hover {
+  background-color: var(--control-tile-hover-bg);
+}
+
 .lead-form--application .choice-grid label:has(input:checked) {
-  background: var(--control-tile-checked-bg);
+  background-color: var(--control-tile-checked-bg);
   box-shadow: none;
 }
 

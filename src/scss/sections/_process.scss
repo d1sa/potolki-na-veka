@@ -67,12 +67,12 @@
   flex: 0 0 128px;
   width: 128px;
   height: 128px;
-  overflow: hidden;
+  overflow: visible;
   border-radius: var(--service-card-image-radius);
   background: var(--bg-strong);
 }
 
-.process-section .process-card__image img {
+.process-section .process-card__image > img {
   display: block;
   width: 100%;
   height: 100%;
@@ -96,6 +96,7 @@
 .process-card h3,
 .process-card p {
   padding-inline: 0;
+  padding-block: 0;
 }
 
 .process-card h3 {
@@ -122,19 +123,25 @@
   align-items: flex-start;
 }
 
+.process-step--with-icon {
+  width: 80px;
+  border-radius: 1000px;
+  background: var(--white);
+}
+
 .process-step__number,
 .process-step__icon {
   display: grid;
   width: 40px;
   height: 40px;
   place-items: center;
-  border: 5px solid var(--white);
   border-radius: 1000px;
+  box-shadow: 0 0 0 5px var(--white);
   color: var(--white);
 }
 
 .process-step__number {
-  z-index: 2;
+  z-index: 1;
   background: var(--icon-contrast-bg);
   font-size: 20px;
   font-weight: 700;
@@ -143,30 +150,20 @@
 
 .process-step__icon {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin-left: -4px;
   background: var(--topbar-accent);
 }
 
-.process-step__icon::before {
-  content: "";
+.process-step__icon img {
   width: 24px;
   height: 24px;
-  background: currentColor;
-}
-
-.process-step__icon--flag::before {
-  -webkit-mask: url("../../../assets/icons/flag-fill.svg") center / contain no-repeat;
-  mask: url("../../../assets/icons/flag-fill.svg") center / contain no-repeat;
+  max-width: none;
+  background: transparent;
 }
 
 .process-step__icon--crown {
   background: var(--success);
-}
-
-.process-step__icon--crown::before {
-  -webkit-mask: url("../../../assets/icons/crown-fill.svg") center / contain no-repeat;
-  mask: url("../../../assets/icons/crown-fill.svg") center / contain no-repeat;
 }
 
 .process-action {
@@ -176,6 +173,7 @@
 .process-cta {
   gap: 12px;
   min-width: 398px;
+  padding-inline: 40px;
   border-color: var(--line-neutral);
   background: var(--card);
   color: var(--text);
@@ -194,9 +192,13 @@
   width: 24px;
   height: 24px;
   flex: 0 0 24px;
-  background: currentColor;
-  -webkit-mask: url("../../../assets/icons/phone-fill.svg") center / contain no-repeat;
-  mask: url("../../../assets/icons/phone-fill.svg") center / contain no-repeat;
+}
+
+.process-cta__icon img {
+  width: 24px;
+  height: 24px;
+  max-width: none;
+  background: transparent;
 }
 
 @media (max-width: 1180px) {
@@ -257,7 +259,7 @@
     border-radius: 28px;
   }
 
-  .process-section .process-card__image img {
+  .process-section .process-card__image > img {
     height: 100%;
     aspect-ratio: 1;
   }
@@ -281,7 +283,7 @@
     flex-basis: auto;
   }
 
-  .process-section .process-card__image img {
+  .process-section .process-card__image > img {
     height: 100%;
     aspect-ratio: 16 / 10;
   }

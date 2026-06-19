@@ -1,4 +1,4 @@
-.details-card {
+.details-card.section-card--image-bg {
   background: linear-gradient(
     180deg,
     var(--details-gradient-start) 25.316%,
@@ -7,17 +7,19 @@
   );
 }
 
-.details-card::before {
-  content: "";
-  position: absolute;
+.details-section .section-card--image-bg::before,
+.details-section .section-card--image-bg::after {
+  content: none;
+}
+
+.details-card__background {
   top: 0;
-  left: 21.5%;
+  right: auto;
+  bottom: auto;
+  left: 0;
   width: 100%;
-  height: min(934px, 42%);
-  background:
-    linear-gradient(180deg, rgba(247, 247, 228, 0) 0%, rgba(247, 247, 228, 0.72) 100%),
-    url("../../../assets/images/gallery-lighting.jpg") center / cover no-repeat;
-  opacity: 0.2;
+  height: auto;
+  object-fit: contain;
   pointer-events: none;
 }
 
@@ -209,9 +211,10 @@
     padding-block: 40px;
   }
 
-  .details-card::before {
-    left: 0;
-    height: 420px;
+  .details-card__background {
+    width: 1660px;
+    max-width: none;
+    transform: translateX(-30%);
   }
 
   .details-content {

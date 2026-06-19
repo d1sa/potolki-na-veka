@@ -40,6 +40,10 @@
     grid-template-columns: 1fr;
   }
 
+  .price-layout {
+    gap: 48px;
+  }
+
   .price-copy {
     position: static;
   }
@@ -113,13 +117,8 @@
     grid-column: span 2;
   }
 
-  .timeline {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px 20px;
-  }
-
   .footer-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -448,44 +447,60 @@
     gap: 28px;
   }
 
-  .price-note {
-    margin: 24px 0;
+  .price-copy {
+    gap: 24px;
+  }
+
+  .price-copy h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .price-copy > p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .price-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .price-actions .button {
+    width: 100%;
+  }
+
+  .price-group__header {
+    min-height: 88px;
+    padding: 16px;
+  }
+
+  .price-group__header h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .price-group__icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
   }
 
   .price-row {
-    grid-template-columns: 1fr;
-    gap: 7px;
-    min-height: auto;
+    min-height: 0;
+    gap: 12px;
     padding: 16px;
   }
 
   .price-row span,
   .price-row strong {
     font-size: 16px;
+    line-height: 22px;
     text-align: left;
   }
 
-  .price-group h3 {
-    padding: 15px 16px;
-  }
-
-  .timeline {
-    grid-template-columns: 1fr;
-    gap: 22px;
-  }
-
-  .timeline li {
-    min-height: auto;
-    grid-template-columns: 42px 1fr;
-    column-gap: 14px;
-  }
-
-  .timeline li::before {
-    display: none;
-  }
-
-  .timeline span {
-    grid-row: span 2;
+  .price-row strong {
+    white-space: normal;
   }
 
   .final-cta-inner {
@@ -494,6 +509,19 @@
 
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .site-footer.section-card-layout {
+    padding: 12px;
+  }
+
+  .site-footer__card {
+    min-height: auto;
+    border-radius: 28px;
+  }
+
+  .site-footer .section-card__content {
+    padding-block: 32px;
   }
 
   .mobile-sticky-actions {

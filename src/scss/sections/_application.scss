@@ -3,16 +3,23 @@
   background: var(--card-soft);
 }
 
+.application-card.section-card {
+  isolation: isolate;
+}
+
 .application-section .section-card--image-bg::before,
 .application-section .section-card--image-bg::after {
   display: none;
 }
 
 .application-card__background {
+  z-index: 0;
+  opacity: 1;
   object-position: center top;
 }
 
 .application-content {
+  z-index: 1;
   padding-block: 72px;
 }
 

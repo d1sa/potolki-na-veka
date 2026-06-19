@@ -1,3 +1,6 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M6 3.75C6 3.33579 6.33579 3 6.75 3C7.16421 3 7.5 3.33579 7.5 3.75V4.5H17.25C17.6642 4.5 18 4.83579 18 5.25V13.25C18 13.6642 17.6642 14 17.25 14H7.5V20.25C7.5 20.6642 7.16421 21 6.75 21C6.33579 21 6 20.6642 6 20.25V3.75Z" fill="white"/>
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24_icon-fill/flag">
+<path id="Vector" d="M4.81123 3.3539C11.5926 -0.143248 13.3236 5.86589 18.9768 3.66679C19.8903 3.31156 21 3.9048 21 4.88495V13.5281C21 14.1029 20.6996 14.6445 20.1888 14.908C13.4075 18.4056 11.6763 12.4055 6.02324 14.6065C5.10983 14.9622 4 12.9802 4 12V4.7329C4.00003 4.15814 4.3004 3.61735 4.81123 3.3539Z" fill="var(--fill-0, white)"/>
+<path id="Vector_2" d="M4 4L5.74692 19.8906" stroke="var(--stroke-0, white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </svg>

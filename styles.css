@@ -20,6 +20,9 @@
   --line-strong: rgba(var(--text-rgb), 0.2);
   --shadow: 0 22px 60px rgba(var(--text-rgb), 0.08);
   --radius: 16px;
+  --gallery-bg-start: #e6f2fb;
+  --gallery-bg-middle: rgba(232, 238, 242, 0.4);
+  --gallery-bg-end: rgba(247, 247, 228, 0);
   --header-height: 78px;
   --icon-chevron-right: url("assets/icons/chevron-right.svg");
 }
@@ -1692,7 +1695,7 @@ legend {
 }
 
 .gallery-section {
-  background: #f1ece3;
+  background: linear-gradient(180deg, var(--gallery-bg-start) 21.154%, var(--gallery-bg-middle) 70.192%, var(--gallery-bg-end) 100%), var(--white);
 }
 
 .gallery-grid {
@@ -1707,7 +1710,7 @@ legend {
   min-height: 260px;
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: 28px;
   background: #fff;
   transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
 }
@@ -1728,22 +1731,15 @@ legend {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(var(--text-rgb), 0) 36%, rgba(var(--text-rgb), 0.74));
+  background: linear-gradient(180deg, rgba(var(--text-rgb), 0) 36%, rgba(var(--text-rgb), 0.4));
 }
 
-.gallery-card h3,
-.gallery-card span {
+.gallery-card h3 {
   position: absolute;
   left: 18px;
   right: 18px;
   z-index: 1;
   color: #fff;
-}
-
-.gallery-card span {
-  bottom: 58px;
-  font-size: 12px;
-  opacity: 0.82;
 }
 
 .gallery-card h3 {
