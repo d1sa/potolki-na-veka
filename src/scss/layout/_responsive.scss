@@ -90,8 +90,6 @@
     grid-column: auto;
   }
 
-  .solutions-grid .image-card:first-child,
-  .solutions-grid .image-card:nth-child(2),
   .rooms-grid .image-card:first-child {
     grid-column: span 2;
   }
@@ -314,22 +312,16 @@
   .services-grid .image-card,
   .services-grid .image-card:nth-child(1),
   .services-grid .image-card:nth-child(3),
-  .solutions-grid .image-card:first-child,
-  .solutions-grid .image-card:nth-child(2),
   .rooms-grid .image-card:first-child,
   .process-card {
     grid-column: auto;
   }
 
-  .solutions-grid .image-card:first-child,
-  .solutions-grid .image-card:nth-child(2),
   .rooms-grid .image-card:first-child,
   .process-card {
     display: flex;
   }
 
-  .solutions-grid .image-card:first-child img,
-  .solutions-grid .image-card:nth-child(2) img,
   .rooms-grid .image-card:first-child img,
   .process-card img {
     height: auto;

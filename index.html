@@ -622,47 +622,70 @@
         </div>
       </section>
 
-      <section class="section toned">
-        <div class="container">
-          <div class="section-header reveal">
-            <span class="section-kicker">Решения</span>
-            <h2>Популярные решения для ремонта</h2>
-            <p>Можно выбрать базовый потолок без сложных элементов или сразу продумать освещение, карниз, профиль и декоративную подсветку.</p>
-          </div>
-          <div class="card-grid three solutions-grid">
-            <a class="image-card reveal" href="%BASE_URL%uslugi/resheniya/bazovyj-potolok/">
-              <img src="assets/images/solution-basic.jpg" alt="Базовый натяжной потолок в светлой комнате">
-              <h3>Базовый потолок</h3>
-              <p>ПВХ-полотно со стандартным профилем для квартиры, дома или новостройки. Подойдёт, если нужен простой, практичный и доступный вариант без дополнительных решений.</p>
-            </a>
-            <a class="image-card reveal" href="%BASE_URL%uslugi/resheniya/potolok-so-svetom/">
-              <img src="assets/images/solution-lighting.jpg" alt="Натяжной потолок со встроенным освещением">
-              <h3>Потолок со встроенным освещением</h3>
-              <p>Поможем продумать комфортное освещение для кухни, ванной, прихожей, зала или спальни. Подскажем подходящее решение: компактные светильники GX53, трековые, линейные светильники или комбинированный свет под вашу комнату и сценарии использования.</p>
-            </a>
-            <a class="image-card reveal" href="%BASE_URL%uslugi/resheniya/potolok-s-lyustroj/">
-              <img src="assets/images/solution-chandelier.jpg" alt="Натяжной потолок с люстрой">
-              <h3>Потолок с люстрой</h3>
-              <p>Подготовим закладную, выведем крепление и провод в нужной точке. Люстру можно совместить с дополнительными светильниками.</p>
-            </a>
-            <a class="image-card reveal" href="%BASE_URL%uslugi/karnizy/skrytaya-nisha/">
-              <img src="assets/images/solution-niche.jpg" alt="Скрытая ниша под карниз в натяжном потолке">
-              <h3>Скрытая ниша под карниз</h3>
-              <p>Карниз не виден, а зона окна выглядит аккуратнее и современнее.</p>
-            </a>
-            <a class="image-card reveal" href="%BASE_URL%uslugi/resheniya/tenevoj-potolok/">
-              <img src="assets/images/solution-shadow.jpg" alt="Теневой натяжной потолок с чёткой линией примыкания">
-              <h3>Теневой потолок</h3>
-              <p>Современное примыкание к стене без декоративной вставки, с чёткой линией по периметру.</p>
-            </a>
-            <a class="image-card reveal" href="%BASE_URL%uslugi/resheniya/paryashchij-potolok/">
-              <img src="assets/images/solution-floating.jpg" alt="Парящий натяжной потолок с подсветкой по периметру">
-              <h3>Парящий потолок</h3>
-              <p>Потолок с подсветкой по периметру, который визуально делает конструкцию легче и современнее.</p>
-            </a>
-          </div>
-          <div class="section-action reveal">
-            <a class="button button-secondary" href="%BASE_URL%uslugi/resheniya/">Смотреть популярные решения</a>
+      <section class="section-card-layout solutions-section" aria-labelledby="solutions-title">
+        <div class="section-card">
+          <div class="section-card__content solutions-content">
+            <div class="section-header solutions-section__header reveal">
+              <span class="section-kicker">Решения</span>
+              <h2 id="solutions-title">Популярные решения для ремонта</h2>
+              <p>Можно выбрать базовый потолок без сложных элементов или сразу продумать освещение, карниз, профиль и декоративную подсветку.</p>
+            </div>
+            <div class="solutions-grid">
+              <a class="solutions-card solutions-card--basic reveal" href="%BASE_URL%uslugi/resheniya/bazovyj-potolok/">
+                <img src="assets/images/solution-basic.jpg" alt="Базовый натяжной потолок в светлой комнате">
+                <div class="solutions-card__body">
+                  <h3>Базовый потолок</h3>
+                  <p>ПВХ-полотно со стандартным профилем для квартиры, дома или новостройки. Подойдёт, если нужен простой, практичный и доступный вариант без дополнительных решений.</p>
+                  <span class="solutions-card__arrow" aria-hidden="true"></span>
+                </div>
+              </a>
+              <a class="solutions-card solutions-card--lighting reveal" href="%BASE_URL%uslugi/resheniya/potolok-so-svetom/">
+                <img src="assets/images/solution-lighting.jpg" alt="Натяжной потолок со встроенным освещением">
+                <div class="solutions-card__body">
+                  <h3>Потолок со встроенным освещением</h3>
+                  <p>Поможем продумать комфортное освещение для кухни, ванной, прихожей, зала или спальни. Подскажем подходящее решение: компактные светильники GX53, трековые, линейные светильники или комбинированный свет под вашу комнату и сценарии использования.</p>
+                  <span class="solutions-card__arrow" aria-hidden="true"></span>
+                </div>
+              </a>
+              <a class="solutions-card solutions-card--chandelier reveal" href="%BASE_URL%uslugi/resheniya/potolok-s-lyustroj/">
+                <img src="assets/images/solution-chandelier.jpg" alt="Натяжной потолок с люстрой">
+                <div class="solutions-card__body">
+                  <h3>Потолок с люстрой</h3>
+                  <p>Подготовим закладную, выведем крепление и провод в нужной точке. Люстру можно совместить с дополнительными светильниками.</p>
+                  <span class="solutions-card__arrow" aria-hidden="true"></span>
+                </div>
+              </a>
+              <a class="solutions-card solutions-card--niche reveal" href="%BASE_URL%uslugi/karnizy/skrytaya-nisha/">
+                <img src="assets/images/solution-niche.jpg" alt="Скрытая ниша под карниз в натяжном потолке">
+                <div class="solutions-card__body">
+                  <h3>Скрытая ниша под карниз</h3>
+                  <p>Карниз не виден, а зона окна выглядит аккуратнее и современнее.</p>
+                  <span class="solutions-card__arrow" aria-hidden="true"></span>
+                </div>
+              </a>
+              <a class="solutions-card solutions-card--shadow reveal" href="%BASE_URL%uslugi/resheniya/tenevoj-potolok/">
+                <img src="assets/images/solution-shadow.jpg" alt="Теневой натяжной потолок с чёткой линией примыкания">
+                <div class="solutions-card__body">
+                  <h3>Теневой потолок</h3>
+                  <p>Современное примыкание к стене без декоративной вставки, с чёткой линией по периметру.</p>
+                  <span class="solutions-card__arrow" aria-hidden="true"></span>
+                </div>
+              </a>
+              <a class="solutions-card solutions-card--floating reveal" href="%BASE_URL%uslugi/resheniya/paryashchij-potolok/">
+                <img src="assets/images/solution-floating.jpg" alt="Парящий натяжной потолок с подсветкой по периметру">
+                <div class="solutions-card__body">
+                  <h3>Парящий потолок</h3>
+                  <p>Потолок с подсветкой по периметру, который визуально делает конструкцию легче и современнее.</p>
+                  <span class="solutions-card__arrow" aria-hidden="true"></span>
+                </div>
+              </a>
+            </div>
+            <div class="solutions-section__action reveal">
+              <a class="solutions-section__button" href="%BASE_URL%uslugi/resheniya/">
+                <span>Смотреть популярные решения</span>
+                <span class="solutions-section__button-icon" aria-hidden="true"></span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
