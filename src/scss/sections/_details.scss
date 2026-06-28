@@ -99,7 +99,7 @@
   place-items: center;
   border-radius: 999px;
   background: var(--white);
-  transition: transform 0.18s ease, width 0.18s ease;
+  transition: transform var(--motion-interactive), width var(--motion-interactive);
 }
 
 .details-group__link-icon::before {

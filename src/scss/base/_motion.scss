@@ -1,7 +1,7 @@
 .reveal {
   opacity: 0;
   transform: translateY(18px);
-  transition: opacity 0.55s ease, transform 0.55s ease;
+  transition: opacity var(--motion-reveal), transform var(--motion-reveal);
 }
 
 .reveal.is-visible {

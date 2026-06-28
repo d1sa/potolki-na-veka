@@ -136,7 +136,7 @@
   line-height: 24px;
   letter-spacing: -0.16px;
   white-space: nowrap;
-  transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+  transition: border-color var(--motion-interactive), background var(--motion-interactive), color var(--motion-interactive);
 }
 
 .topbar-phone:hover,
@@ -169,7 +169,7 @@
   font-weight: 600;
   line-height: 24px;
   white-space: nowrap;
-  transition: background 0.18s ease, color 0.18s ease;
+  transition: background var(--motion-interactive), color var(--motion-interactive);
 }
 
 .nav-link__chevron {
@@ -224,7 +224,7 @@
   box-shadow: 0 28px 80px rgba(var(--text-rgb), 0.14);
   padding: 10px;
   overflow: hidden;
-  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+  transition: opacity var(--motion-interactive), transform var(--motion-interactive), visibility var(--motion-interactive);
 }
 
 .nav-dropdown:hover .services-dropdown,
@@ -287,7 +287,7 @@
   border-radius: 12px;
   background: transparent;
   min-height: 96px;
-  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+  transition: transform var(--motion-interactive), border-color var(--motion-interactive), background var(--motion-interactive), box-shadow var(--motion-interactive);
 }
 
 .dropdown-card::after {
@@ -300,7 +300,7 @@
   background-color: currentColor;
   opacity: 0;
   transform: translateX(-4px);
-  transition: opacity 0.18s ease, transform 0.18s ease;
+  transition: opacity var(--motion-interactive), transform var(--motion-interactive);
   -webkit-mask: var(--icon-chevron-right) center / contain no-repeat;
   mask: var(--icon-chevron-right) center / contain no-repeat;
 }
@@ -369,20 +369,5 @@
 
 .button.button-topbar {
   min-width: 180px;
-  min-height: 52px;
-  padding: 12px 24px;
-  border-color: var(--success);
-  border-radius: 12px;
-  background: var(--success);
-  font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
-}
-
-.button.button-topbar:hover,
-.button.button-topbar:focus-visible {
-  transform: none;
-  border-color: var(--success-hover);
-  background: var(--success-hover);
-  box-shadow: none;
 }

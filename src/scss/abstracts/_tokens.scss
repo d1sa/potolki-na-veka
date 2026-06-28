@@ -54,7 +54,12 @@
   --shadow-form-field: 0 4px 8px rgba(0, 0, 0, 0.08);
   --shadow-form-field-clear: 0 4px 8px rgba(0, 0, 0, 0);
   --shadow-topbar: 0 10px 40px rgba(0, 0, 0, 0.06);
-  --transition-input: border-color 0.18s ease, border-radius 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease, color 0.18s ease;
+  --motion-ease-standard: ease;
+  --motion-interactive: 0.18s var(--motion-ease-standard);
+  --motion-panel: 0.24s var(--motion-ease-standard);
+  --motion-media: 0.28s var(--motion-ease-standard);
+  --motion-reveal: 0.55s var(--motion-ease-standard);
+  --transition-input: border-color var(--motion-interactive), border-radius var(--motion-interactive), box-shadow var(--motion-interactive), background-color var(--motion-interactive), color var(--motion-interactive);
   --radius: 16px;
   --section-card-radius: 60px;
   --card-large-radius: 40px;

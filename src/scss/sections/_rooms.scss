@@ -78,18 +78,18 @@
   text-decoration: none;
   transition:
     height 0.52s cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 0.28s ease,
-    box-shadow 0.28s ease;
+    border-color var(--motion-media),
+    box-shadow var(--motion-media);
   will-change: height;
 }
 
 .rooms-list__item.reveal {
   transition:
     height 0.52s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.55s ease,
-    transform 0.55s ease,
-    border-color 0.28s ease,
-    box-shadow 0.28s ease;
+    opacity var(--motion-reveal),
+    transform var(--motion-reveal),
+    border-color var(--motion-media),
+    box-shadow var(--motion-media);
 }
 
 .rooms-list__item:hover,
@@ -224,9 +224,9 @@
   line-height: 24px;
   white-space: nowrap;
   transition:
-    background 0.18s ease,
-    border-color 0.18s ease,
-    color 0.18s ease;
+    background var(--motion-interactive),
+    border-color var(--motion-interactive),
+    color var(--motion-interactive);
 }
 
 .rooms-list__item--active:hover .rooms-list__button,
@@ -255,7 +255,7 @@
   height: 100%;
   border-radius: 30px;
   object-fit: cover;
-  transition: opacity 0.18s ease;
+  transition: opacity var(--motion-interactive);
 }
 
 @keyframes rooms-progress {

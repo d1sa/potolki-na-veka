@@ -58,7 +58,7 @@
   background: var(--card);
   box-shadow: var(--shadow-soft-card);
   color: inherit;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  transition: transform var(--motion-interactive), box-shadow var(--motion-interactive);
 }
 
 .approach-card:hover,

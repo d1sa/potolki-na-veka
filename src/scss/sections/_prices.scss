@@ -76,27 +76,8 @@
   align-items: flex-start;
 }
 
-.price-actions .button {
-  min-height: 52px;
-  padding: 12px 28px;
-  border-radius: 12px;
-  font-size: 16px;
-  line-height: 24px;
-}
-
 .price-actions .button-secondary {
   gap: 12px;
-  border-color: var(--line-button-muted);
-  background: transparent;
-  color: var(--text);
-}
-
-.price-actions .button-secondary:hover,
-.price-actions .button-secondary:focus-visible {
-  border-color: var(--line-button-muted);
-  background: var(--button-ghost-hover-bg);
-  color: var(--text);
-  box-shadow: none;
 }
 
 .price-actions .button-secondary img {

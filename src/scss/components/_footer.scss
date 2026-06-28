@@ -22,7 +22,7 @@
 .site-footer a {
   color: var(--text);
   text-decoration: none;
-  transition: color 0.18s ease;
+  transition: color var(--motion-interactive);
 }
 
 .site-footer a:hover,

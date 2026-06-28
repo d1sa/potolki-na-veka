@@ -21,7 +21,7 @@ select {
 
 input::placeholder,
 textarea::placeholder {
-  transition: color 0.18s ease;
+  transition: color var(--motion-interactive);
 }
 
 .lead-form {
@@ -35,6 +35,20 @@ textarea::placeholder {
 }
 
 .lead-form--application {
+  --form-control-height: 60px;
+  --form-control-padding: 16px;
+  --form-control-border: var(--line-control);
+  --form-control-hover-border: var(--line-control-hover);
+  --form-control-focus-border: var(--topbar-accent);
+  --form-control-radius: var(--radius);
+  --form-control-active-radius: 12px;
+  --form-control-bg: var(--white);
+  --form-control-caret: var(--topbar-accent);
+  --form-control-shadow: var(--shadow-control);
+  --form-control-active-shadow: var(--shadow-control-clear);
+  --form-control-placeholder: var(--control-placeholder);
+  --form-control-placeholder-active: var(--control-placeholder-active);
+
   gap: 20px;
   align-self: start;
   padding: 48px 24px 24px;
@@ -42,6 +56,22 @@ textarea::placeholder {
   border-radius: var(--form-card-radius);
   background: var(--white);
   box-shadow: var(--shadow-soft-card);
+}
+
+.hero-aside-form {
+  --form-control-height: 52px;
+  --form-control-padding: 13px 16px;
+  --form-control-border: var(--white);
+  --form-control-hover-border: transparent;
+  --form-control-focus-border: var(--accent);
+  --form-control-radius: 12px;
+  --form-control-active-radius: 12px;
+  --form-control-bg: var(--white);
+  --form-control-caret: var(--accent);
+  --form-control-shadow: var(--shadow-form-field);
+  --form-control-active-shadow: var(--shadow-form-field-clear);
+  --form-control-placeholder: var(--control-placeholder);
+  --form-control-placeholder-active: var(--control-placeholder-active);
 }
 
 .lead-form label {
@@ -70,48 +100,63 @@ textarea::placeholder {
 }
 
 .lead-form--application input[type="text"],
-.lead-form--application input[type="tel"] {
-  height: 60px;
-  min-height: 60px;
-  padding: 16px;
-  border-color: var(--line-control);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-control);
-  caret-color: var(--topbar-accent);
+.lead-form--application input[type="tel"],
+.hero-aside-form input {
+  width: 100%;
+  height: var(--form-control-height);
+  min-height: var(--form-control-height);
+  padding: var(--form-control-padding);
+  border: 1px solid var(--form-control-border);
+  border-radius: var(--form-control-radius);
+  background: var(--form-control-bg);
+  color: var(--text);
+  box-shadow: var(--form-control-shadow);
+  caret-color: var(--form-control-caret);
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
-  transition: background-color 0.18s ease;
 }
 
-.lead-form--application input::placeholder {
-  color: var(--control-placeholder);
+.hero-aside-form .hero-phone-field input {
+  padding-left: 42px;
+}
+
+.lead-form--application input::placeholder,
+.hero-aside-form input::placeholder {
+  color: var(--form-control-placeholder);
   opacity: 1;
 }
 
 .lead-form--application input[type="text"]:hover,
-.lead-form--application input[type="tel"]:hover {
-  border-color: var(--line-control-hover);
-  border-radius: 12px;
-  box-shadow: var(--shadow-control-clear);
+.lead-form--application input[type="tel"]:hover,
+.hero-aside-form label:hover input {
+  border-color: var(--form-control-hover-border);
+  border-radius: var(--form-control-active-radius);
+  box-shadow: var(--form-control-active-shadow);
 }
 
 .lead-form--application input[type="text"]:focus,
 .lead-form--application input[type="tel"]:focus,
 .lead-form--application input[type="text"]:focus-visible,
-.lead-form--application input[type="tel"]:focus-visible {
-  border-color: var(--topbar-accent);
-  border-radius: 12px;
-  caret-color: var(--topbar-accent);
+.lead-form--application input[type="tel"]:focus-visible,
+.hero-aside-form label:focus-within input,
+.hero-aside-form input:focus,
+.hero-aside-form input:focus-visible {
+  border-color: var(--form-control-focus-border);
+  border-radius: var(--form-control-active-radius);
+  caret-color: var(--form-control-caret);
   outline: 0;
-  box-shadow: var(--shadow-control-clear);
+  box-shadow: var(--form-control-active-shadow);
 }
 
 .lead-form--application input[type="text"]:hover::placeholder,
 .lead-form--application input[type="tel"]:hover::placeholder,
 .lead-form--application input[type="text"]:focus::placeholder,
-.lead-form--application input[type="tel"]:focus::placeholder {
-  color: var(--control-placeholder-active);
+.lead-form--application input[type="tel"]:focus::placeholder,
+.hero-aside-form label:hover input::placeholder,
+.hero-aside-form label:focus-within input::placeholder,
+.hero-aside-form input:focus::placeholder {
+  color: var(--form-control-placeholder-active);
 }
 
 .lead-form input:focus,
@@ -180,7 +225,7 @@ legend {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
-  transition: background-color 0.28s ease;
+  transition: background-color var(--motion-media);
 }
 
 .lead-form--application .choice-grid input {

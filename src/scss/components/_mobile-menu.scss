@@ -50,7 +50,7 @@
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
   transform: translateX(100%);
-  transition: transform 0.24s ease;
+  transition: transform var(--motion-panel);
 }
 
 .mobile-menu.is-open .mobile-panel {
@@ -100,7 +100,7 @@
 }
 
 .mobile-services-trigger span {
-  transition: transform 0.18s ease;
+  transition: transform var(--motion-interactive);
 }
 
 .mobile-services.is-open .mobile-services-trigger span {
@@ -113,7 +113,7 @@
   max-height: 0;
   overflow: hidden;
   padding: 0;
-  transition: max-height 0.24s ease, padding 0.24s ease;
+  transition: max-height var(--motion-panel), padding var(--motion-panel);
 }
 
 .mobile-services.is-open .mobile-services-list {
@@ -132,7 +132,7 @@
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.58);
   font-size: 15px;
-  transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+  transition: border-color var(--motion-interactive), background var(--motion-interactive), transform var(--motion-interactive);
 }
 
 .mobile-nav .mobile-service-card:hover,
